@@ -26,7 +26,7 @@
 
 ## Sprints
 
-* [Sprint 1](./Sprint01/Desafio/Sprint1)
+* [Sprint 1](./Sprint01)
 * [Sprint 2](https://www.exemplo.com)
 * [Sprint 3](https://www.exemplo.com)
 * [Sprint 4](https://www.exemplo.com)

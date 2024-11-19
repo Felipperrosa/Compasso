@@ -1,0 +1,100 @@
+Data do Sistema: 2024/11/11 15:27
+Data do Primeiro Registro de Venda: 01/01/2023
+Data do Último Registro de Venda: 31/01/2023
+Quantidade total de itens diferentes vendidos: 68
+============================================
+Primeiras 10 linhas do arquivo de vendas:
+id,produto,quantidade,preço,data
+1,camiseta,2,29.90,01/01/2023
+2,calça,5,80.00,02/01/2023
+3,sapato,3,100.00,03/01/2023
+4,meia,20,5.00,04/01/2023
+5,cinto,8,15.00,05/01/2023
+6,camisa,7,40.00,06/01/2023
+7,bermuda,6,50.00,07/01/2023
+8,tênis,4,120.00,08/01/2023
+9,bone,12,10.00,09/01/2023
+10,casaco,2,150.00,10/01/2023
+============================================
+
+
+Data do Sistema: 2024/11/12 15:27
+Data do Primeiro Registro de Venda: 15/03/2023
+Data do Último Registro de Venda: 12/10/2023
+Quantidade total de itens diferentes vendidos: 77
+============================================
+Primeiras 10 linhas do arquivo de vendas:
+id,produto,quantidade,preço,data
+1,moletom,3,79.90,15/03/2023
+2,jaqueta,2,199.90,16/03/2023
+3,blusa térmica,5,99.90,17/03/2023
+4,touca,10,29.90,18/03/2023
+5,cachecol,7,49.90,19/03/2023
+6,luvas,12,39.90,20/03/2023
+7,bota de neve,4,299.90,21/03/2023
+8,calça térmica,6,89.90,22/03/2023
+9,cobertor,3,149.90,23/03/2023
+10,meia térmica,8,19.90,24/03/2023  
+============================================
+
+
+Data do Sistema: 2024/11/13 15:27
+Data do Primeiro Registro de Venda: 25/03/2023
+Data do Último Registro de Venda: 20/06/2023
+Quantidade total de itens diferentes vendidos: 70
+============================================
+Primeiras 10 linhas do arquivo de vendas:
+id,produto,quantidade,preço,data
+1,sobretudo,2,299.90,25/03/2023
+2,jaqueta corta-vento,5,149.90,26/03/2023
+3,camiseta de lã,10,79.90,27/03/2023
+4,manta,4,99.90,28/03/2023
+5,jaqueta de couro,3,349.90,29/03/2023
+6,colete acolchoado,6,129.90,30/03/2023
+7,mochila térmica,2,159.90,31/03/2023
+8,sapato impermeável,8,199.90,01/04/2023
+9,óculos de neve,5,89.90,02/04/2023
+10,protetor auricular,12,19.90,03/04/2023  
+============================================
+
+
+Data do Sistema: 2024/11/14 15:27
+Data do Primeiro Registro de Venda: 05/04/2023  
+Data do Último Registro de Venda: 03/05/2023
+Quantidade total de itens diferentes vendidos: 67
+============================================
+Primeiras 10 linhas do arquivo de vendas:
+id,produto,quantidade,preço,data
+1,casaco impermeável,3,299.00,05/04/2023  
+2,luvas térmicas,8,59.90,06/04/2023  
+3,gorro de lã,15,29.90,07/04/2023  
+4,calça cargo,6,109.90,08/04/2023  
+5,blusa de moletom,4,89.90,09/04/2023  
+6,camiseta manga longa,10,49.90,10/04/2023  
+7,bota trekking,2,399.90,11/04/2023  
+8,jaqueta esportiva,7,219.90,12/04/2023  
+9,meia antiderrapante,12,19.90,13/04/2023  
+10,cachecol de lã,5,69.90,14/04/2023  
+============================================
+
+
+Data do Sistema: 2024/11/17 20:28
+Data do Primeiro Registro de Venda: 15/03/2023
+Data do Último Registro de Venda: 12/10/2023
+Quantidade total de itens diferentes vendidos: 77
+============================================
+Primeiras 10 linhas do arquivo de vendas:
+id,produto,quantidade,preço,data
+1,moletom,3,79.90,15/03/2023
+2,jaqueta,2,199.90,16/03/2023
+3,blusa térmica,5,99.90,17/03/2023
+4,touca,10,29.90,18/03/2023
+5,cachecol,7,49.90,19/03/2023
+6,luvas,12,39.90,20/03/2023
+7,bota de neve,4,299.90,21/03/2023
+8,calça térmica,6,89.90,22/03/2023
+9,cobertor,3,149.90,23/03/2023
+10,meia térmica,8,19.90,24/03/2023  
+============================================
+
+

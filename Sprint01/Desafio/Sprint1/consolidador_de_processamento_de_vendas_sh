@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# 1. Define o caminho do arquivo final
+relatorio_final="/home/felippe/Sprint1/vendas/backup/relatorio_final.txt"
+
+# 2. Cria (ou limpa) o arquivo relatorio_final.txt
+> "$relatorio_final"
+
+# 3. Adiciona dados de cada relatório individual gerado
+for relatorio in /home/felippe/Sprint1/vendas/backup/relatorio-*.txt; do
+  # Adiciona o conteúdo de cada relatório ao relatório final
+  cat "$relatorio" >> "$relatorio_final"
+  echo -e "\n" >> "$relatorio_final"
+done
+
+# 4. Mensagem final
+echo "Relatório consolidado criado com sucesso!"

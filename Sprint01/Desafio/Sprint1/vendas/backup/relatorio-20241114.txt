@@ -1,0 +1,18 @@
+Data do Sistema: 2024/11/14 15:27
+Data do Primeiro Registro de Venda: 05/04/2023  
+Data do Último Registro de Venda: 03/05/2023
+Quantidade total de itens diferentes vendidos: 67
+============================================
+Primeiras 10 linhas do arquivo de vendas:
+id,produto,quantidade,preço,data
+1,casaco impermeável,3,299.00,05/04/2023  
+2,luvas térmicas,8,59.90,06/04/2023  
+3,gorro de lã,15,29.90,07/04/2023  
+4,calça cargo,6,109.90,08/04/2023  
+5,blusa de moletom,4,89.90,09/04/2023  
+6,camiseta manga longa,10,49.90,10/04/2023  
+7,bota trekking,2,399.90,11/04/2023  
+8,jaqueta esportiva,7,219.90,12/04/2023  
+9,meia antiderrapante,12,19.90,13/04/2023  
+10,cachecol de lã,5,69.90,14/04/2023  
+============================================

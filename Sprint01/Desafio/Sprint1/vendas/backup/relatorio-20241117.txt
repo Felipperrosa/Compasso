@@ -1,0 +1,36 @@
+Data do Sistema: 2024/11/17 20:28
+Data do Primeiro Registro de Venda: 15/03/2023
+Data do Último Registro de Venda: 12/10/2023
+Quantidade total de itens diferentes vendidos: 77
+============================================
+Primeiras 10 linhas do arquivo de vendas:
+id,produto,quantidade,preço,data
+1,moletom,3,79.90,15/03/2023
+2,jaqueta,2,199.90,16/03/2023
+3,blusa térmica,5,99.90,17/03/2023
+4,touca,10,29.90,18/03/2023
+5,cachecol,7,49.90,19/03/2023
+6,luvas,12,39.90,20/03/2023
+7,bota de neve,4,299.90,21/03/2023
+8,calça térmica,6,89.90,22/03/2023
+9,cobertor,3,149.90,23/03/2023
+10,meia térmica,8,19.90,24/03/2023  
+============================================
+Data do Sistema: 2024/11/17 20:30
+Data do Primeiro Registro de Venda: 15/03/2023
+Data do Último Registro de Venda: 12/10/2023
+Quantidade total de itens diferentes vendidos: 77
+============================================
+Primeiras 10 linhas do arquivo de vendas:
+id,produto,quantidade,preço,data
+1,moletom,3,79.90,15/03/2023
+2,jaqueta,2,199.90,16/03/2023
+3,blusa térmica,5,99.90,17/03/2023
+4,touca,10,29.90,18/03/2023
+5,cachecol,7,49.90,19/03/2023
+6,luvas,12,39.90,20/03/2023
+7,bota de neve,4,299.90,21/03/2023
+8,calça térmica,6,89.90,22/03/2023
+9,cobertor,3,149.90,23/03/2023
+10,meia térmica,8,19.90,24/03/2023  
+============================================

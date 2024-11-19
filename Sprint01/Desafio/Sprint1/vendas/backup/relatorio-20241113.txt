@@ -1,0 +1,18 @@
+Data do Sistema: 2024/11/13 15:27
+Data do Primeiro Registro de Venda: 25/03/2023
+Data do Último Registro de Venda: 20/06/2023
+Quantidade total de itens diferentes vendidos: 70
+============================================
+Primeiras 10 linhas do arquivo de vendas:
+id,produto,quantidade,preço,data
+1,sobretudo,2,299.90,25/03/2023
+2,jaqueta corta-vento,5,149.90,26/03/2023
+3,camiseta de lã,10,79.90,27/03/2023
+4,manta,4,99.90,28/03/2023
+5,jaqueta de couro,3,349.90,29/03/2023
+6,colete acolchoado,6,129.90,30/03/2023
+7,mochila térmica,2,159.90,31/03/2023
+8,sapato impermeável,8,199.90,01/04/2023
+9,óculos de neve,5,89.90,02/04/2023
+10,protetor auricular,12,19.90,03/04/2023  
+============================================

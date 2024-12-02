@@ -1,0 +1,17 @@
+E07
+Apresente a query para listar o nome dos autores com nenhuma publicação. Apresentá-los em ordem crescente.
+=====================================================================
+
+
+
+
+select 
+   a.nome 
+   from autor as a 
+   left join livro as l 
+    on a.codautor = l.autor 
+    where 
+    l.autor is null
+    order by   
+ a.nome
+    

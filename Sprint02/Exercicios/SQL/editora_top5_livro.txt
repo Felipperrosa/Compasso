@@ -1,0 +1,13 @@
+SELECT                                                                                                   
+    e.codeditora as CodEditora,
+    e.nome as NomeEditora,
+    COUNT(l.editora) AS QuantidadeLivros
+FROM 
+    livro AS l
+LEFT JOIN 
+    editora AS e ON l.editora = e.codeditora
+GROUP BY 
+    e.codeditora, e.nome
+ORDER BY 
+    QuantidadeLivros DESC
+LIMIT 5;

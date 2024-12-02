@@ -27,7 +27,7 @@ CREATE TABLE Clientes (
     nomeCliente VARCHAR(100),              
     cidadeCliente VARCHAR(100),         
     estadoCliente VARCHAR(50),             
-    paisCliente VARCHAR(50)                -
+    paisCliente VARCHAR(50)                
 );
 
 -- Criação da tabela 'Vendedores', que armazena os vendedores que realizam as locações.

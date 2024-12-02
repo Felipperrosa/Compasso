@@ -15,6 +15,12 @@ O objetivo deste desafio é aplicar as Formas Normais para normalizar uma base d
   - [Tabela Locacoes](#tabela-locacoes)
   - [Inserções de Dados](#inserções-de-dados)
   - [Modelo Relacional Relacionamentos](#modelo-relacional-relacionamentos)
+- [Resultado das consultas Relacional](#resultado-das-consultas-relacional)
+  - [Tabela Combustiveis](#tabela-combustiveis-1)
+  - [Tabela Carros](#tabela-carros-1)
+  - [Tabela Clientes](#tabela-clientes-1)
+  - [Tabela Vendedores](#tabela-vendedores-1)
+  - [Tabela Locacoes](#tabela-locacoes-1)
     - [Modelagem dimensional](#modelagem-dimensional)
   - [Tabela de Dimensão para Clientes](#tabela-de-dimensão-para-clientes)
   - [Tabela de Dimensão para Carros](#tabela-de-dimensão-para-carros)
@@ -22,6 +28,12 @@ O objetivo deste desafio é aplicar as Formas Normais para normalizar uma base d
   - [Tabela de Dimensão para Tempo](#tabela-de-dimensão-para-tempo)
   - [Tabela de Fatos para as Locações](#tabela-de-fatos-para-as-locações)
   - [Modelo Dimensional Relacionamentos](#modelo-dimensional-relacionamentos)
+- [Resultado das consultas Dimensional](#resultado-das-consultas-dimensional)
+  - [Tabela de Dimensão Clientes](#tabela-de-dimensão-clientes)
+  - [Tabela de Dimensão Carros](#tabela-de-dimensão-carros)
+  - [Tabela de Dimensão Vendedores](#tabela-de-dimensão-vendedores)
+  - [Tabela de Dimensão Tempo](#tabela-de-dimensão-tempo)
+  - [Tabela de Fatos Locações](#tabela-de-fatos-locações)
     
 
  ## Links para as pastas 
@@ -191,6 +203,18 @@ FROM tb_locacao;  -- A origem dos dados é a tabela 'tb_locacao'
 ![Foto](../Evidencias/modelo_r.png)
 
 
+# Resultado das consultas Relacional
+
+## Tabela Combustiveis
+![Foto](../Evidencias/Combutiveis.png)
+## Tabela Carros
+![Foto](../Evidencias/Carros.png)
+## Tabela Clientes 
+![Foto](../Evidencias/Clientes.png)
+## Tabela Vendedores 
+![Foto](../Evidencias/Vendedores.png)
+## Tabela Locacoes
+![Foto](../Evidencias/Locacoes.png)
 
 
 
@@ -316,3 +340,22 @@ FROM
 
 
 ![Foto](../Evidencias/modelo_d.png)
+
+
+
+# Resultado das consultas Dimensional
+
+## Tabela de Dimensão Clientes
+![Foto](../Evidencias/dim_clientes.png)
+## Tabela de Dimensão Carros
+![Foto](../Evidencias/dim_carros.png)
+
+## Tabela de Dimensão Vendedores
+![Foto](../Evidencias/dim_vendedores.png)
+
+## Tabela de Dimensão Tempo
+![Foto](../Evidencias/dim_tempo.png)
+![Foto](../Evidencias/dim_tempofinal.png)
+
+## Tabela de Fatos Locações
+![Foto](../Evidencias/fato_locacoes.png)

@@ -51,4 +51,4 @@ O código SQL é usado para listar as cinco editoras com mais livros registrados
 # Certificados
 Certificado AWS Partner: Sales Accreditation (Business)
 
-- ![Foto](./Certificados/AWS%20Partner%20Sales%20Accreditation%20(Business).png)
+![Foto](./Certificados/AWS%20Partner%20Sales%20Accreditation%20(Business).png)

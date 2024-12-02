@@ -21,7 +21,7 @@ O objetivo deste desafio é aplicar as Formas Normais para normalizar uma base d
   - [Tabela Clientes](#tabela-clientes-1)
   - [Tabela Vendedores](#tabela-vendedores-1)
   - [Tabela Locacoes](#tabela-locacoes-1)
-    - [Modelagem dimensional](#modelagem-dimensional)
+- [Modelagem dimensional](#modelagem-dimensional)
   - [Tabela de Dimensão para Clientes](#tabela-de-dimensão-para-clientes)
   - [Tabela de Dimensão para Carros](#tabela-de-dimensão-para-carros)
   - [Tabela de Dimensão para Vendedores](#tabela-de-dimensão-para-vendedores)
@@ -218,7 +218,7 @@ FROM tb_locacao;  -- A origem dos dados é a tabela 'tb_locacao'
 
 
 
-### Modelagem dimensional 
+# Modelagem dimensional 
 
 Foi realizada para organizar as informações no banco de dados de forma eficiente para consultas analíticas e relatórios. O processo de modelagem envolveu a criação de tabelas de *fatos* e *dimensões* para capturar as informações essenciais sobre as locações de carros, seus clientes, carros, vendedores e o tempo.
 

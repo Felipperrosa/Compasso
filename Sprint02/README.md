@@ -45,9 +45,10 @@
 ## Etapa 2 
 O código SQL é usado para listar as cinco editoras com mais livros registrados. Ele realiza uma junção entre as tabelas livro e editora, agrupando os dados pelo código e nome da editora. Em seguida, ordena os resultados pela quantidade de livros em ordem decrescente e exibe apenas os cinco primeiros registros.
 
-![Foto](./Evidencias/editora_top5_livro.png)
+
 
 
 # Certificados
+Certificado AWS Partner: Sales Accreditation (Business)
 
-- [Certificado AWS Partner: Sales Accreditation (Business)](../Sprint02/Certificados/AWS%20Partner%20Sales%20Accreditation%20(Business).png)
+- ![Foto](./Certificados/AWS%20Partner%20Sales%20Accreditation%20(Business).png)

@@ -14,12 +14,14 @@ O objetivo deste desafio é aplicar as Formas Normais para normalizar uma base d
   - [Tabela Vendedores](#tabela-vendedores)
   - [Tabela Locacoes](#tabela-locacoes)
   - [Inserções de Dados](#inserções-de-dados)
+  - [Modelo Relacional Relacionamentos](#modelo-relacional-relacionamentos)
     - [Modelagem dimensional](#modelagem-dimensional)
   - [Tabela de Dimensão para Clientes](#tabela-de-dimensão-para-clientes)
   - [Tabela de Dimensão para Carros](#tabela-de-dimensão-para-carros)
   - [Tabela de Dimensão para Vendedores](#tabela-de-dimensão-para-vendedores)
   - [Tabela de Dimensão para Tempo](#tabela-de-dimensão-para-tempo)
   - [Tabela de Fatos para as Locações](#tabela-de-fatos-para-as-locações)
+  - [Modelo Dimensional Relacionamentos](#modelo-dimensional-relacionamentos)
     
 
  ## Links para as pastas 
@@ -182,6 +184,16 @@ FROM tb_locacao;  -- A origem dos dados é a tabela 'tb_locacao'
 ```
 
 
+## Modelo Relacional Relacionamentos
+
+
+
+![Foto](../Evidencias/modelo_r.png)
+
+
+
+
+
 ### Modelagem dimensional 
 
 Foi realizada para organizar as informações no banco de dados de forma eficiente para consultas analíticas e relatórios. O processo de modelagem envolveu a criação de tabelas de *fatos* e *dimensões* para capturar as informações essenciais sobre as locações de carros, seus clientes, carros, vendedores e o tempo.
@@ -299,3 +311,8 @@ SELECT
 FROM 
     Locacoes l;
 ```  
+
+## Modelo Dimensional Relacionamentos
+
+
+![Foto](../Evidencias/modelo_d.png)

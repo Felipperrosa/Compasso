@@ -6,6 +6,7 @@ O objetivo deste desafio é aplicar as Formas Normais para normalizar uma base d
 
 - [Desafio](#desafio)
 - [Índice](#índice)
+  - [Links para as pastas](#links-para-as-pastas)
   - [Explicação sobre a Normalização e Criação das Tabelas](#explicação-sobre-a-normalização-e-criação-das-tabelas)
   - [Tabela Combustiveis](#tabela-combustiveis)
   - [Tabela Carros](#tabela-carros)
@@ -21,12 +22,12 @@ O objetivo deste desafio é aplicar as Formas Normais para normalizar uma base d
   - [Tabela de Fatos para as Locações](#tabela-de-fatos-para-as-locações)
     
 
- 
-
+ ## Links para as pastas 
+ - [Modelagem_Relacional](./Modelagem_Relacional) 
+ - [Modelagem_Dimensional](./Modelagem_Dimensional) 
 
 ## Explicação sobre a Normalização e Criação das Tabelas 
 
-- [Modelagem_Relacional](./Modelagem_Relacional) 
 
 Este processo de criação de tabelas e inserção de dados segue um modelo relacional e visa a normalização dos dados, promovendo a eficiência, a consistência e a integridade das informações. O objetivo é minimizar redundâncias e garantir que os dados sejam armazenados de forma otimizada, respeitando as dependências entre as entidades.
 

@@ -10,12 +10,14 @@ CREATE TABLE Combustiveis (
 -- Criação da tabela 'Carros', que armazena os carros disponíveis para locação.
 -- Esta tabela faz referência à tabela 'Combustiveis', associando cada carro a um tipo de combustível.
 CREATE TABLE Carros (
-    idCarro INT PRIMARY KEY,              
-    classiCarro VARCHAR(50),              
-    modeloCarro VARCHAR(100),              
-    anoCarro INT,                          
-    idCombustivel INT,                     
-    FOREIGN KEY (idCombustivel) REFERENCES Combustiveis(idCombustivel)  -- Chave estrangeira para a tabela 'Combustiveis'
+    idCarro INT PRIMARY KEY,
+    classiCarro VARCHAR(50),
+    marcaCarro VARCHAR(50),
+    modeloCarro VARCHAR(100),
+    kmCarroatual DECIMAL(10, 2),
+    anoCarro INT,
+    idCombustivel INT,
+    FOREIGN KEY (idCombustivel) REFERENCES Combustiveis(idCombustivel)
 );
 
 -- Criação da tabela 'Clientes', que armazena os clientes que realizam locações.
@@ -102,9 +104,10 @@ FROM tb_locacao;  -- A origem dos dados é a tabela 'tb_locacao'
 -- Inserção de Dados na tabela 'Carros', a partir da tabela 'tb_locacao', sem duplicidade.
 -- Insere os carros únicos presentes na tabela de origem.
 -- A instrução 'INSERT OR IGNORE' impede a inserção de registros duplicados.
-INSERT OR IGNORE INTO Carros (idCarro, classiCarro, marcaCarro, modeloCarro, anoCarro, idCombustivel)
-SELECT idCarro, classiCarro, marcaCarro, modeloCarro, anoCarro, idCombustivel
-FROM tb_locacao;  -- A origem dos dados é a tabela 'tb_locacao'
+INSERT OR REPLACE INTO Carros (idCarro, classiCarro, marcaCarro, modeloCarro,kmCarroatual, anoCarro, idCombustivel)
+SELECT DISTINCT idCarro, classiCarro, marcaCarro, modeloCarro,kmCarro, anoCarro, idCombustivel
+FROM tb_locacao;
+
 
 -- Inserção de Dados na tabela 'Combustiveis', a partir da tabela 'tb_locacao', sem duplicidade.
 -- Insere os combustíveis únicos presentes na tabela de origem.

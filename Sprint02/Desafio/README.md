@@ -52,12 +52,14 @@ Objetivo: Relacionar carros com seus respectivos tipos de combustível, evitando
 
 ```sql
 CREATE TABLE Carros (
-    idCarro INT PRIMARY KEY,              
-    classiCarro VARCHAR(50),              
-    modeloCarro VARCHAR(100),              
-    anoCarro INT,                          
-    idCombustivel INT,                     
-    FOREIGN KEY (idCombustivel) REFERENCES Combustiveis(idCombustivel)  
+    idCarro INT PRIMARY KEY,
+    classiCarro VARCHAR(50),
+    marcaCarro VARCHAR(50),
+    modeloCarro VARCHAR(100),
+    kmCarroatual DECIMAL(10, 2),
+    anoCarro INT,
+    idCombustivel INT,
+    FOREIGN KEY (idCombustivel) REFERENCES Combustiveis(idCombustivel)
 );
 ```
 
@@ -166,9 +168,9 @@ FROM tb_locacao;  -- A origem dos dados é a tabela 'tb_locacao'
 -- Inserção de Dados na tabela 'Carros', a partir da tabela 'tb_locacao', sem duplicidade.
 
 
-INSERT OR IGNORE INTO Carros (idCarro, classiCarro, marcaCarro, modeloCarro, anoCarro, idCombustivel)
-SELECT idCarro, classiCarro, marcaCarro, modeloCarro, anoCarro, idCombustivel
-FROM tb_locacao;  -- A origem dos dados é a tabela 'tb_locacao'
+INSERT OR REPLACE INTO Carros (idCarro, classiCarro, marcaCarro, modeloCarro,kmCarroatual, anoCarro, idCombustivel)
+SELECT DISTINCT idCarro, classiCarro, marcaCarro, modeloCarro,kmCarro, anoCarro, idCombustivel
+FROM tb_locacao;
 
 
 
@@ -216,9 +218,7 @@ SELECT DISTINCT
     ca.marcaCarro AS marca,                 
     ca.modeloCarro AS modelo,               
     ca.anoCarro AS ano,                    
-    (SELECT MAX(kmCarro) 
-     FROM Locacoes l 
-     WHERE l.idCarro = ca.idCarro) AS quilometragem_atual,
+    ca.kmCarroatual AS quilometragem_atual,
     ca.idCombustivel AS id_combustivel,    
     co.tipoCombustivel AS tipo_combustivel
 FROM 

@@ -41,10 +41,7 @@ SELECT DISTINCT
     ca.marcaCarro AS marca,                 
     ca.modeloCarro AS modelo,               
     ca.anoCarro AS ano,                    
-    -- Máxima quilometragem registrada para cada carro na tabela de locações
-    (SELECT MAX(kmCarro) 
-     FROM Locacoes l 
-     WHERE l.idCarro = ca.idCarro) AS quilometragem_atual, -- Quilometragem atual do carro
+    ca.kmCarroatual AS quilometragem_atual,
     ca.idCombustivel AS id_combustivel,    -- ID do tipo de combustível do carro
     co.tipoCombustivel AS tipo_combustivel -- Tipo de combustível (gasolina, etanol, etc.)
 FROM 

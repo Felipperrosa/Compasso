@@ -4,6 +4,7 @@ O objetivo deste desafio é aplicar as Formas Normais para normalizar uma base d
 
 # Índice
 
+
 - [Desafio](#desafio)
 - [Índice](#índice)
   - [Links para as pastas](#links-para-as-pastas)
@@ -359,3 +360,8 @@ FROM
 
 ## Tabela de Fatos Locações
 ![Foto](../Evidencias/fato_locacoes.png)
+
+
+
+
+- [Voltar para o topo](#desafio)

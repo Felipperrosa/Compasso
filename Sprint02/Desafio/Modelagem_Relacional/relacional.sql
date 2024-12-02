@@ -114,3 +114,6 @@ FROM tb_locacao;
 INSERT INTO Combustiveis (idCombustivel, tipoCombustivel)
 SELECT DISTINCT idCombustivel, tipoCombustivel
 FROM tb_locacao;  -- A origem dos dados é a tabela 'tb_locacao'
+
+
+

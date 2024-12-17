@@ -254,7 +254,6 @@ plt.tight_layout()  # Ajustar layout para evitar cortes
 plt.show()
 ```
 
-![Evidências](../Evidencias/Pizza_agrupado.png)
 
 ## Explicação sobre a Divisão de Categorias
 

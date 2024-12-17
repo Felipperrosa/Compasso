@@ -87,7 +87,7 @@ for row in data:
 
 ```
 **Etapa 1: Ator com o Maior Número de Filmes**
-- O ator com o maior número de filmes é: [Nome do Ator] - [Número de Filmes] filmes
+
 ```Python
     # Etapa 1: Ator com o Maior Número de Filmes
     max_movies = max(data, key=lambda x: int(x[2]) if x[2].isdigit() else 0)
@@ -97,7 +97,7 @@ for row in data:
 ![Evidências](../Sprint03/Exercicios/Evidencias/etapa-1.png)
 
 **Etapa 2: Média de Bilheteira Bruta dos Principais Filmes**
-- Média de bilheteira bruta: [Valor da Média de Bilheteira] (exemplo: 150.25)
+
 ``` Python
 # Etapa 2: Média de Bilheteira Bruta dos Principais Filmes
 gross_values = []
@@ -115,8 +115,7 @@ with open("etapa-2.txt", "w", encoding="utf-8") as f:
 ![Evidências](../Sprint03/Exercicios/Evidencias/etapa-2.png)
 
 **Etapa 3: Ator com Maior Média de Receita por Filme**
-- O ator com a maior média de receita por filme é: [Nome do Ator] - [Média de Receita por Filme]
-  
+
 ``` Python
 # Etapa 3: Ator com Maior Média de Receita por Filme
 max_avg = max(
@@ -128,9 +127,10 @@ with open("etapa-3.txt", "w", encoding="utf-8") as f:
 
 ```
 ![Evidências](../Sprint03/Exercicios/Evidencias/etapa-3.png)
+
+
 **Etapa 4: Contagem de Aparições de Filmes na Coluna "#1 Movie"**
-- O filme [Nome do Filme] aparece [Número de Aparições] vez(es) no dataset
-  - (Exemplo de várias linhas com filmes ordenados por frequência de aparições)
+
 
 ``` Python
 # Etapa 4: Contagem de Aparições de Filmes na Coluna "#1 Movie"
@@ -148,8 +148,7 @@ with open("etapa-4.txt", "w", encoding="utf-8") as f:
 ![Evidências](../Sprint03/Exercicios/Evidencias/etapa-4.png)
 
 **Etapa 5: Ordenação de Atores por Receita Total Bruta**
-- [Nome do Ator] - [Receita Total Bruta]
-  - (Lista de atores ordenada da maior para a menor receita total bruta)
+
 
 
 ``` Python

@@ -12,7 +12,7 @@ Para complementar, o desafio exigiu a criação de gráficos adicionais e a apli
 
 - [Desafio](#desafio)
 - [Índice](#índice)
-  - [Carregar o arquivo CSV original](#carregar-o-arquivo-csv-original)
+- [Carregar o arquivo CSV original](#carregar-o-arquivo-csv-original)
 - [Análise e Limpeza de Dados do Google Play Store](#análise-e-limpeza-de-dados-do-google-play-store)
       - [Saída:](#saída)
 - [Processamento da Coluna 'Installs' e Visualização dos Top 5 Aplicativos](#processamento-da-coluna-installs-e-visualização-dos-top-5-aplicativos)
@@ -38,7 +38,7 @@ Para complementar, o desafio exigiu a criação de gráficos adicionais e a apli
       - [Top 5 Categorias com Mais Aplicativos:](#top-5-categorias-com-mais-aplicativos)
   - [Gráficos Adicionais](#gráficos-adicionais)
 
-## Carregar o arquivo CSV original
+# Carregar o arquivo CSV original
  
 O primeiro passo é carregar o arquivo CSV original que contém informações sobre os aplicativos. O arquivo é lido usando a função pd.read_csv(), e o caractere de aspas duplas (") é tratado como delimitador para as strings no arquivo
 

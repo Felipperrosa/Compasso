@@ -41,9 +41,15 @@ Além disso, o curso oferece transcrições e legendas traduzidas, com a narraç
 - [Resposta Ex24.](./Exercicios/Parte2/ex24.py)
 - [Resposta Ex25.](./Exercicios/Parte2/ex25.py)
 
-## Exportação de dados
-- [Resposta Etapa 1.](./Exercicios/SQL/livros_top10_valor.csv)
-- [Resposta Etapa 2.](./Exercicios/SQL/editora_top5_livro.csv)
+## ETL
+- [Resposta.](./Exercicios/ETL/etl_actors.py)
+- [Etapa-1.](./Exercicios/ETL/etapa-1.txt)
+- [Etapa-2.](./Exercicios/ETL/etapa-2.txt)
+- [Etapa-2.](./Exercicios/ETL/etapa-3.txt)
+- [Etapa-4.](./Exercicios/ETL/etapa-4.txt)
+- [Etapa-5.](./Exercicios/ETL/etapa-5.txt)
+
+
 
   
 

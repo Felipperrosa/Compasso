@@ -352,12 +352,7 @@ most_expensive_app
 ## Apps classificados como 'Mature 17+'
 
 ```Python
-# mature_17_plus_count = data[data['Content Rating'] == 'Mature 17+'].shape[0]
-# print(f"Número de apps classificados como 'Mature 17+': {mature_17_plus_count}")
-
-
-mature_17_plus_count = data['Content Rating'].str.contains('Mature 17+', na=False).sum()
-
+mature_17_plus_count = data[data['Content Rating'] == 'Mature 17+'].shape[0]
 print(f"Número de apps classificados como 'Mature 17+': {mature_17_plus_count}")
 ```
 #### Saída:

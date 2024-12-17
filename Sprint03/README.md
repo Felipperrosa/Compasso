@@ -27,7 +27,7 @@ Além disso, o curso oferece transcrições e legendas traduzidas, com a narraç
 - [Resposta Ex10.](./Exercicios/Parte2/ex10.py)
 - [Resposta Ex11.](./Exercicios/Parte2/ex11.py)
 - [Resposta Ex12.](./Exercicios/Parte2/ex12.py)
-- [Resposta Ex12.](./Exercicios/Parte2/ex13.py)
+- [Resposta Ex13.](./Exercicios/Parte2/ex13.py)
 - [Resposta Ex14.](./Exercicios/Parte2/ex14.py)
 - [Resposta Ex15.](./Exercicios/Parte2/ex15.py)
 - [Resposta Ex16.](./Exercicios/Parte2/ex16.py)

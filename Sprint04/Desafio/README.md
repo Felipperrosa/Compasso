@@ -10,14 +10,16 @@ Neste desafio, o objetivo foi construir uma imagem a partir de um arquivo de ins
 - [Construindo uma imagem](#construindo-uma-imagem)
 - [Executando o container a partir da imagem criada](#executando-o-container-a-partir-da-imagem-criada)
 - [É possível reutilizar contêineres?](#é-possível-reutilizar-contêineres)
-- [Script Python](#script-python)
-- [Criando a imagem mascar-dados](#criando-a-imagem-mascar-dados)
-- [Iniciando o container](#iniciando-o-container)
+- [Hash](#hash)
+  - [Arquivo Dockerfile](#arquivo-dockerfile-1)
+  - [Script Python](#script-python)
+  - [Criando a imagem mascar-dados](#criando-a-imagem-mascar-dados)
+  - [Iniciando o container](#iniciando-o-container)
 
 # Arquivo Dockerfile
 
 ```Dockerfile
-FROM python:3
+FROM python:3.10-slim
 
 WORKDIR /app
 
@@ -56,29 +58,48 @@ docker start -i <container_id ou container_name>
 
 ```
 
-# Script Python 
+# Hash
+
+## Arquivo Dockerfile
+
+```Docker
+FROM python:3.10-slim
+
+WORKDIR /app
+
+COPY mascarar_dados.py .
+
+CMD ["python", "mascarar_dados.py"]
+
+
+```
+
+
+
+
+
+## Script Python 
 
   ```Python
   import hashlib
 
   while True:
-      input_data = input(
-          "Digite uma string para gerar o hash SHA-1(ou 'sair' para encerrar): "
-      )
-      if input_data.lower() == "sair":
-          break
+        entrada = input("Digite uma string (ou 'S' para sair): ")
+        if entrada.lower() == "s":
+            break
 
-      hash_result = hashlib.sha1(input_data.encode()).hexdigest()
-      print(f"Hash SHA-1: {hash_result}")    
+        hash_resultado = hashlib.sha1(entrada.encode()).hexdigest()
+        print(f"Hash SHA-1: {hash_resultado}")
+
 
   ```
 
-# Criando a imagem mascar-dados
+## Criando a imagem mascar-dados
 
 ![Evidências](../Evidencias/imagemmascarar-dados.png)
 ![Evidências](../Evidencias/image.png)
 
-# Iniciando o container 
+## Iniciando o container 
    
 
 ![Evidências](../Evidencias/container-hash.png)

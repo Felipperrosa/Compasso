@@ -1,4 +1,4 @@
-# Resumo da Sprint 2
+# Resumo da Sprint 3
 
 **Python:** Neste curso de Python, aprendi o básico da linguagem, incluindo como usar classes e manipular arquivos. Também me aprofundei em programação orientada a objetos (POO), o que me permitiu criar programas mais estruturados e reutilizáveis. O curso abordou ainda o gerenciamento de pacotes, o que me ajudou a instalar e organizar bibliotecas necessárias para meus projetos.
 

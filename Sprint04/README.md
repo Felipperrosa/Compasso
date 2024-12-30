@@ -27,4 +27,4 @@ Neste curso, aprendi sobre a presença global da AWS e como ela impacta as impla
 
 # Certificados
 AWS Partner: Credenciamento (Técnico) (Português) | AWS Partner: Accreditation (Technical) (Portuguese)
-![Foto](./Certificados/AWS%20Partner%20Credenciamento%20(Técnico)%20(Português)%20AWS%20Partner%20Accreditation%20(Technical)%20(Portuguese).png)
+![Foto](./Certificados/AWS%20Partner%20Credenciamento%20(Técnico)%20(Português)%20%20AWS%20Partner%20Accreditation%20(Technical)%20(Portuguese).png)

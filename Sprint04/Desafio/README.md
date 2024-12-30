@@ -31,27 +31,51 @@ CMD [ "python", "carguru.py" ]
 
 # Construindo uma imagem 
 
+
+```Dockerfile
+docker build -t nome_da_imagem .
+```
+O comando acima cria uma imagem Docker a partir do Dokcerfile que está presente no diretório atual(.), e p parâmerto -t define o nome que será atribuído para a imagem 
+
+
+
 ![Evidências](../Evidencias/criando-imagem.png)
+
+```Dockerfile
+docker image ls 
+```
+Exibe uma lista de todas as imagens Docker presentes no sistema local
 
 ![Evidências](../Evidencias/imagemcarguru.png)
 
 # Executando o container a partir da imagem criada 
 
+Para iniciar um contâiner ultilizamos o comando
+
+```Dockerfile
+docker run -it --name container_id imagem_id
+```
+
 A opção -it combina -i (modo interativo) e -t (aloca um terminal) para permitir interações com o contêiner por meio de um terminal.
 
 ![Evidências](../Evidencias/container_carguru.png)
+
+```Dockerfile
+docker start -i carguru-container
+```
+Para reutilizar o container.
 
 ![Evidências](../Evidencias/containers.png)
 
 # É possível reutilizar contêineres?
 
-Sim, é possível reutilizar containers, desde que eles não sejam removidos. Para isso, utilize o comando
+Sim, é possível reutilizar containers, desde que eles não sejam removidos.
 
 ```Docker
 docker start <container_id ou container_name>
 ```
 
-Caso o container tenha terminado com erro ou precise ser ajustado, você pode iniciar um terminal interativo:
+Ou se  o container tenha terminado com erro ou precise ser ajustado, para iniciar um terminal interativo:
 
 ```Docker
 docker start -i <container_id ou container_name>
@@ -81,26 +105,38 @@ CMD ["python", "mascarar_dados.py"]
 ## Script Python 
 
   ```Python
-  import hashlib
+  # Importa o módulo hashlib que contém funções para gerar hashes
+import hashlib
 
-  while True:
-        entrada = input("Digite uma string (ou 'S' para sair): ")
-        if entrada.lower() == "s":
-            break
+# Inicia um loop infinito para receber entradas do usuário
+while True:
+    # Solicita ao usuário que digite uma string ou 'S' para sair
+    entrada = input("Digite uma string (ou 'S' para sair): ")
+    
+    # Se o usuário digitar 'S', converte para minúsculo e sai do loop
+    if entrada.lower() == "s":
+        break  # Interrompe o loop
 
-        hash_resultado = hashlib.sha1(entrada.encode()).hexdigest()
-        print(f"Hash SHA-1: {hash_resultado}")
-
+    # Converte a entrada do usuário para bytes e calcula o hash SHA-1
+    hash_resultado = hashlib.sha1(entrada.encode()).hexdigest()
+    
+    # Exibe o hash gerado na tela, no formato hexadecimal
+    print(f"Hash SHA-1: {hash_resultado}")
 
   ```
 
 ## Criando a imagem mascar-dados
 
+```Docker
+docker build -t mascarar-dados .
+
+```
 ![Evidências](../Evidencias/imagemmascarar-dados.png)
 ![Evidências](../Evidencias/image.png)
 
 ## Iniciando o container 
-   
-
+```Docker
+docker run -it --name mascarardados-container mascarar-dados
+```
 ![Evidências](../Evidencias/container-hash.png)
 

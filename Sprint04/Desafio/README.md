@@ -53,7 +53,7 @@ Exibe uma lista de todas as imagens Docker presentes no sistema local
 Para iniciar um contâiner ultilizamos o comando
 
 ```Dockerfile
-docker run -it --name container_id imagem_id
+docker run -it --name carguru-container carguru image
 ```
 
 A opção -it combina -i (modo interativo) e -t (aloca um terminal) para permitir interações com o contêiner por meio de um terminal.

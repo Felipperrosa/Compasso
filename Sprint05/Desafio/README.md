@@ -69,7 +69,7 @@ except Exception as e:
 import boto3
 import pandas as pd
 
-
+# Criando Sessão
 session = boto3.Session(profile_name="AdministratorAccess-442426891183")
 
 s3 = session.client("s3", region_name="us-east-1")
@@ -109,6 +109,7 @@ filtro_df["CONTAGEM_TIPO_NOTIFICACAO"] = filtro_df["TIPO_NOTIFICACAO"].map(tipo_
 uf_counts = filtro_df.groupby("CLASSE_RISCO").size()
 filtro_df["CONTAGEM_UF_OCORRENCIA"] = filtro_df["CLASSE_RISCO"].map(uf_counts)
 
+
 # print("\nContagem de ocorrências por TIPO_NOTIFICACAO:")
 # print(tipo)
 
@@ -129,8 +130,10 @@ filtro_df["DATA_NOTIFICACAO"] = pd.to_datetime(
     filtro_df["DATA_NOTIFICACAO"], errors="coerce", dayfirst=True
 )
 
+
 # print("\nData modificada:")
 # print(filtro_df["DATA_NOTIFICACAO"].head())
+
 
 # 5. Função data - Calcular a diferença entre duas datas
 filtro_df["DIFERENCA_DIAS"] = (
@@ -138,10 +141,12 @@ filtro_df["DIFERENCA_DIAS"] = (
     - pd.to_datetime(filtro_df["ANO_NOTIFICACAO"].astype(str) + "-01-01")
 ).dt.days
 
+
 # print("\nData modificada:")
 # print(filtro_df ['MES_NOTIFICACAO'].head())
 
-# # 6. Função string
+
+# 6. Função string
 filtro_df = filtro_df.replace("--", "NAO INFORMADO")
 filtro_df = filtro_df.fillna("NAO INFORMADO")
 
@@ -157,9 +162,10 @@ print(
 final_path}'"
 )
 
+
 bucket = "bucket-compass-sprint5"
 
-# Configurando
+# Configurando para enviar para o s3
 
 session = boto3.Session(profile_name="AdministratorAccess-442426891183")
 s3 = session.client("s3")

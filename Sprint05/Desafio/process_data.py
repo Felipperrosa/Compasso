@@ -45,7 +45,7 @@ filtro_df["CONTAGEM_UF_OCORRENCIA"] = filtro_df["CLASSE_RISCO"].map(uf_counts)
 # print("\nContagem de ocorrências por TIPO_NOTIFICACAO:")
 # print(tipo)
 
-# print("\nMédia de notificações por UF_OCORRENCIA :")
+# print("\contar notificações por 'CLASSE_RISCO' de ocorrência :")
 # print(notificações)
 
 # 3. Função Condicional

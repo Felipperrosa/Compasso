@@ -31,6 +31,10 @@ Aprendi a criar arquiteturas escaláveis, resilientes e seguras, usando boas pr�
 # Exercícios
 Explorar as capacidades do serviço AWS S3.  Nos passos que seguem, você será guiado pelas configurações necessárias para que um bucket do Amazon S3 funcione como hospedagem de conteúdo estático.
 
+Arquivos usados para o exercício 
+- [dados.](./Exercicios/dados/)
+- [index.html](./Exercicios/index.html)
+
 # Evidências
 
 ## Etapa 1: Criar um bucket

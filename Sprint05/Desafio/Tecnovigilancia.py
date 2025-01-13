@@ -14,18 +14,18 @@ df = pd.read_csv(arquivo, sep=";", encoding="utf-8")
 
 # 1. Filtrar dados usando dois operadores lógicos
 filtro_df = df[
-    (df["UF_EMPRESA_NOTIFICANTE"] == "RJ") & (df["ANO_NOTIFICACAO"] <= 2022)
+    (df["UF_EMPRESA_NOTIFICANTE"].isin(["RJ", "SP"])) & (df["ANO_NOTIFICACAO"] <= 2022)
 ].copy()
 
-# 2. Duas funções de Agregação
 
+# 2. Duas funções de Agregação
 #  2.1 Contar ocorrencia de cada 'TIPO_NOTIFICAÇÃO'
 tipo_counts = filtro_df.groupby("TIPO_NOTIFICACAO").size()
 filtro_df["CONTAGEM_TIPO_NOTIFICACAO"] = filtro_df["TIPO_NOTIFICACAO"].map(tipo_counts)
 
-# 2.2 Contar notificações por estado de ocorrência e adicionar ao DataFrame
-uf_counts = filtro_df.groupby("UF_OCORRENCIA").size()
-filtro_df["CONTAGEM_UF_OCORRENCIA"] = filtro_df["UF_OCORRENCIA"].map(uf_counts)
+# 2.2 Contar notificações por 'CLASSE_RISCO' de ocorrência
+uf_counts = filtro_df.groupby("CLASSE_RISCO").size()
+filtro_df["CONTAGEM_UF_OCORRENCIA"] = filtro_df["CLASSE_RISCO"].map(uf_counts)
 
 # print("\nContagem de ocorrências por TIPO_NOTIFICACAO:")
 # print(tipo)

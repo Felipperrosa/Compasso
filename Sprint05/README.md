@@ -14,7 +14,7 @@
   - [Etapa 7: Testar o endpoint do site](#etapa-7-testar-o-endpoint-do-site)
 - [Certificados](#certificados)
     - [Curso-padrão de preparação para o exame AWS Certified Cloud Practitioner (CLF-C02 - Português)](#curso-padrão-de-preparação-para-o-exame-aws-certified-cloud-practitioner-clf-c02---português)
-    - [AWS Cloud Quest: Cloud Practitioner](#aws-cloud-quest-cloud-practitioner)
+    - [Link - AWS Cloud Quest: Cloud Practitioner](#link---aws-cloud-quest-cloud-practitioner)
   
    
    
@@ -142,7 +142,7 @@ Criar um arquivo local (sua máquina) com o nome index.html . O conteúdo do arq
 
 ![Foto](./Certificados/Curso-padrão%20de%20preparação%20para%20o%20exame%20AWS%20Certified%20Cloud%20Practitioner%20(CLF-C02%20-%20Português).png)
 
-### [AWS Cloud Quest: Cloud Practitioner](https://www.credly.com/badges/c10f5472-c5e9-4fb5-b3a7-0eb4780016e2/public_url)
+### Link - [AWS Cloud Quest: Cloud Practitioner](https://www.credly.com/badges/c10f5472-c5e9-4fb5-b3a7-0eb4780016e2/public_url)
 
 [![AWS Cloud Quest: Cloud Practitioner](./Certificados/aws-cloud-quest-cloud-practitioner.png)](https://www.credly.com/badges/c10f5472-c5e9-4fb5-b3a7-0eb4780016e2/public_url)
 

@@ -136,7 +136,7 @@ Criar um arquivo local (sua máquina) com o nome index.html . O conteúdo do arq
 
 ### Curso-padrão de preparação para o exame AWS Certified Cloud Practitioner (CLF-C02 - Português) 
 
-![Foto](./Certificados/Curso-padrão%20de%20preparação%20para%20o%20exame%20AWS%20Certified%20Cloud%20Practitioner%20(CLF-C02%20-%20Português)%20%20Exam%20Prep%20Standard%20Course%20AWS%20Certified%20Cloud%20Practitioner%20(CLF-C02%20-%20Portuguese).png)
+![Foto](./Certificados/Curso-padrão%20de%20preparação%20para%20o%20exame%20AWS%20Certified%20Cloud%20Practitioner%20(CLF-C02%20-%20Português).png)
 
 ### [AWS Cloud Quest: Cloud Practitioner](https://www.credly.com/badges/c10f5472-c5e9-4fb5-b3a7-0eb4780016e2/public_url)
 

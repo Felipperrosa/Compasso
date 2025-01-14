@@ -5,6 +5,7 @@ Neste desafio era proposto para escolher um arquivo único do portal de dados p�
 
 - [Desafio](#desafio)
 - [Índice](#índice)
+  - [Como fiz a conexão com a AWS](#como-fiz-a-conexão-com-a-aws)
   - [Criando o bucket e fazendo o upload do arquivo para o S3](#criando-o-bucket-e-fazendo-o-upload-do-arquivo-para-o-s3)
   - [Executando](#executando)
   - [Bucket criado com o CSV original](#bucket-criado-com-o-csv-original)
@@ -14,6 +15,42 @@ Neste desafio era proposto para escolher um arquivo único do portal de dados p�
 
 
 Dataset escolhido foi **Tecnovigilância em Pós-Mercado**
+
+## Como fiz a conexão com a AWS
+
+Para realizar a conexão com a AWS, segui os passos abaixo:
+
+1. **Instalação e configuração da CLI da AWS**  
+   Primeiramente, baixei e instalei a AWS CLI no meu ambiente. Em seguida, configurei o AWS SSO utilizando o comando:
+
+   ```bash
+   aws configure sso
+   ```
+   Durante a configuração, forneci as seguintes informações solicitadas:
+
+- URL do AWS SSO: fornecida pelo administrador.
+- Região: a região onde o SSO foi configurado.
+- Escolhi as contas e perfis aos quais precisava me conectar.
+
+ **Autenticação com SSO**
+ 
+ Após a configuração inicial, utilizei o comando abaixo para autenticar:
+ 
+   ```bash
+   aws sso login --profile <nome-perfil>
+   ```
+**Configuração de credenciais na pasta .aws/credentials**
+pós a autenticação, editei manualmente o arquivo de credenciais localizado em: ~/.aws/credentials
+
+Adicionei as seguintes informações:
+```bash
+aws_access_key_id = MINHA_CHAVE_DE_ACESSO
+aws_secret_access_key = MINHA_CHAVE_SECRETA
+aws_session_token = MEU_TOKEN
+
+ ```
+E foi dessa forma que consegui estabelecer a conexão com a AWS e concluir o desafio com sucesso!
+ 
 
 ## Criando o bucket e fazendo o upload do arquivo para o S3
 

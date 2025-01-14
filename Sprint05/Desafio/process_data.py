@@ -2,9 +2,9 @@ import boto3
 import pandas as pd
 
 # Criando Sessão
-session = boto3.Session(profile_name="AdministratorAccess-442426891183")
+session = boto3.Session(profile_name="nome_do_perfil_sso")
 
-s3 = session.client("s3", region_name="us-east-1")
+s3 = session.client("s3")
 
 
 bucket_name = "bucket-compass-sprint5"
@@ -99,7 +99,7 @@ bucket = "bucket-compass-sprint5"
 
 # Configurando para enviar para o s3
 
-session = boto3.Session(profile_name="AdministratorAccess-442426891183")
+session = boto3.Session(profile_name="")
 s3 = session.client("s3")
 
 try:

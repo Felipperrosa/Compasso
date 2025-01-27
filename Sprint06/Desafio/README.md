@@ -24,7 +24,11 @@ Neste desafio foi proposto criar duas perguntas para análises e fazer a ingest�
 
 1. Como a popularidade dos filmes de guerra mundou ao longo dos anos?
 
+    Esta análise visa observar a evolução da popularidade dos filmes de guerra, considerando métricas como bilheteira, audiência e lançamento ao longo das décadas. A ideia é identificar tendências e mudanças significativas no comportamento do público.
+
 2. Quais filmes apresentam um retorno financeiro abaixo do esperado, com base no orçamento investido?
+    
+    A análise de retorno financeiro terá como base a comparação entre o orçamento de produção e a arrecadação nas bilheteiras. Será calculada a relação entre essas duas variáveis para identificar filmes que não atingiram o retorno financeiro esperado.
 
 
 ## 1. Implementando código Python

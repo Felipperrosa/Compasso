@@ -1,0 +1,16 @@
+SELECT 
+    l.cod AS CodLivro, 
+    l.titulo AS Titulo, 
+    l.autor AS CodAutor, 
+    a.nome AS NomeAutor, 
+    l.valor AS Valor, 
+    e.codeditora AS CodEditora, 
+    e.nome AS NomeEditora
+FROM livro AS l
+LEFT JOIN autor AS a 
+    ON a.codautor = l.autor
+LEFT JOIN editora AS e 
+    ON e.codeditora = l.editora
+WHERE l.valor IS NOT NULL
+ORDER BY l.valor DESC
+LIMIT 10;

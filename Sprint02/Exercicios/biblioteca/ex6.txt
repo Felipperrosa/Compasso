@@ -1,0 +1,20 @@
+E06
+Apresente a query para listar o autor com maior número de livros publicados. O resultado deve conter apenas as colunas codautor, nome, quantidade_publicacoes.
+
+====================================================================
+
+
+SELECT
+    a.codautor,
+    a.nome,
+    COUNT(l.autor) AS quantidade_publicacoes
+FROM
+    autor AS a
+LEFT JOIN
+    livro AS l ON l.autor = a.codautor
+GROUP BY
+    a.codautor, a.nome
+ORDER BY
+    quantidade_publicacoes DESC
+limit 1
+  

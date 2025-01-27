@@ -212,39 +212,39 @@ Teste final.
 
 ### AWS Skill Builder - Fundamentals of Analytics on AWS – Part 1 (Portuguese)
 
-![Foto](./Certificados/AWS%20Skill%20Builder%20-%20Fundamentals%20of%20Analytics%20on%20AWS%20–%20Part%201%20(Portuguese).png)
+![Foto 1](./Certificados/AWS%20Skill%20Builder%20-%20Fundamentals%20of%20Analytics%20on%20AWS%20–%20Part%201%20(Portuguese).png)
 
 ### AWS Skill Builder -  Fundamentals of Analytics on AWS – Part 2 (Portuguese)
 
-![Foto](./Certificados/AWS%20Skill%20Builder%20-%20%20Fundamentals%20of%20Analytics%20on%20AWS%20–%20Part%202%20(Portuguese).png)
+![Foto 2](./Certificados/AWS%20Skill%20Builder%20-%20%20Fundamentals%20of%20Analytics%20on%20AWS%20–%20Part%202%20(Portuguese).png)
 
 ### AWS Skill Builder - Serverless Analytics (Portuguese)
 
-![Foto](./Certificados/AWS%20Skill%20Builder%20-%20Serverless%20Analytics%20(Portuguese).png)
+![Foto 3](./Certificados/AWS%20Skill%20Builder%20-%20Serverless%20Analytics%20(Portuguese).png)
 
 ### AWS Skill Builder - Introduction to Amazon Athena (Portuguese)
 
-![Foto](./Certificados/AWS%20Skill%20Builder%20-%20Introduction%20to%20Amazon%20Athena%20(Portuguese).png)
+![Foto 4](./Certificados/AWS%20Skill%20Builder%20-%20Introduction%20to%20Amazon%20Athena%20(Portuguese).png)
 
 ### AWS Skill Builder - AWS Glue Getting Started (English)
 
-![Foto](./Certificados/AWS%20Skill%20Builder%20-%20AWS%20Glue%20Getting%20Started%20(English).png)
+![Foto 5](./Certificados/AWS%20Skill%20Builder%20-%20AWS%20Glue%20Getting%20Started%20(English).png)
 
 ### AWS Skill Builder - Amazon EMR Getting Started (English)
 
-![Foto](./Certificados/AWS%20Skill%20Builder%20-%20Amazon%20EMR%20Getting%20Started%20(English).png)
+![Foto 6](./Certificados/AWS%20Skill%20Builder%20-%20Amazon%20EMR%20Getting%20Started%20(English).png)
 
 ### AWS Skill Builder - Getting Started with Amazon Redshift (Portuguese)
 
-![Foto](./Certificados/AWS%20Skill%20Builder%20-%20Getting%20Started%20with%20Amazon%20Redshift%20(Portuguese).png)
+![Foto 7](./Certificados/AWS%20Skill%20Builder%20-%20Getting%20Started%20with%20Amazon%20Redshift%20(Portuguese).png)
 
 ### AWS Skill Builder - Best Practices for Data Warehousing with Amazon Redshift (Portuguese)
 
-![Foto](./Certificados/AWS%20Skill%20Builder%20-%20Best%20Practices%20for%20Data%20Warehousing%20with%20Amazon%20Redshift%20(Portuguese).png)
+![Foto 8](./Certificados/AWS%20Skill%20Builder%20-%20Best%20Practices%20for%20Data%20Warehousing%20with%20Amazon%20Redshift%20(Portuguese).png)
 
 ### AWS Skill Builder - Amazon QuickSight - Getting Started (English)
 
-![Foto](./Certificados/AWS%20Skill%20Builder%20-%20Amazon%20QuickSight%20-%20Getting%20Started%20(English).png)
+![Foto 9](./Certificados/AWS%20Skill%20Builder%20-%20Amazon%20QuickSight%20-%20Getting%20Started%20(English).png)
 
 
 

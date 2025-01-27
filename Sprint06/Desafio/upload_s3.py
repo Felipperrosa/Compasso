@@ -4,7 +4,7 @@ import os
 from datetime import datetime
 
 # Criando Sessão
-session = boto3.Session(profile_name="")
+session = boto3.Session(profile_name="nome_do_perfil_sso")
 s3 = session.client("s3")
 
 # Definindo nome do bucket e caminho dos arquivos

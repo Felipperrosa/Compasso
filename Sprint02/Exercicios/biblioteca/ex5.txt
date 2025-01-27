@@ -1,0 +1,20 @@
+E05
+Apresente a query para listar o nome dos autores que publicaram livros através de editoras NÃO situadas na região sul do Brasil. Ordene o resultado pela coluna nome, em ordem crescente. Não podem haver nomes repetidos em seu retorno.
+
+====================================================================  
+
+
+  SELECT DISTINCT 
+    a.nome
+FROM 
+    autor AS a
+LEFT JOIN 
+    livro AS l ON a.codautor = l.autor
+LEFT JOIN 
+    editora AS e ON l.editora = e.codeditora
+LEFT JOIN 
+    endereco AS end ON e.endereco = end.codendereco
+WHERE 
+    end.estado NOT IN ('RIO GRANDE DO SUL', 'PARANÁ')
+ORDER BY 
+    a.nome;

@@ -37,12 +37,33 @@
 
 
 
-### Etapa 1:
-![Foto 1](./Exercicios/Athena/Evidencias_Athena/parte2/criando_data_base.png)
-
-### Etapa 2: 
 
 
-![Foto 1](./Exercicios/Athena/Evidencias_Athena/parte2/criando_data_base.png)
+### Realizando o pull da imagem: 
+
+![Foto 1](./Exercicios/Spark/Evidencias_Spark/Captura%20de%20tela%202025-02-03%20145637.png)
 
 
+### Criando um container:
+
+![Foto 1](./Exercicios/Spark/Evidencias_Spark/Captura%20de%20tela%202025-02-03%20152854.png)
+
+
+![Foto 2](./Exercicios/Spark/Evidencias_Spark/Captura%20de%20tela%202025-02-03%20152907.png)
+
+### Jupyter Lab:
+
+![Foto 1](./Exercicios/Spark/Evidencias_Spark/Captura%20de%20tela%202025-02-03%20153357.png)
+
+
+### Obtendo arquivos do git: 
+
+![Foto 1](./Exercicios/Spark/Evidencias_Spark/Captura%20de%20tela%202025-02-03%20154956.png)
+
+
+### Comandos para contar a quantidade de ocorrências de cada palavra contida 
+
+![Foto 1](./Exercicios/Spark/Evidencias_Spark/Captura%20de%20tela%202025-02-03%20171032.png)
+
+
+![Foto 2](./Exercicios/Spark/Evidencias_Spark/Captura%20de%20tela%202025-02-03%20171043.png)

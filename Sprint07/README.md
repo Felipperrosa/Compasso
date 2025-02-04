@@ -3,30 +3,18 @@
 
 - [Índice](#índice)
 - [Resumo da Sprint 7](#resumo-da-sprint-7)
-- [Exercícios](#exercícios)
-  - [Lab AWS S3 - (Feito na Sprint 5)](#lab-aws-s3---feito-na-sprint-5)
-  - [AWS Athena](#aws-athena)
-  - [Evidências Athena](#evidências-athena)
-  - [Etapa 1:](#etapa-1)
-  - [Etapa 2:](#etapa-2)
-  - [Etapa 3:](#etapa-3)
-- [Lab AWS Lambda](#lab-aws-lambda)
-- [Evidências Lambda](#evidências-lambda)
-  - [Etapa 1:](#etapa-1-1)
-  - [Etapa 2:](#etapa-2-1)
-  - [Etapa 3:](#etapa-3-1)
-  - [Etapa 4:](#etapa-4)
-- [Certificados](#certificados)
-    - [AWS Skill Builder - Fundamentals of Analytics on AWS – Part 1 (Portuguese)](#aws-skill-builder---fundamentals-of-analytics-on-aws--part-1-portuguese)
-    - [AWS Skill Builder -  Fundamentals of Analytics on AWS – Part 2 (Portuguese)](#aws-skill-builder----fundamentals-of-analytics-on-aws--part-2-portuguese)
-    - [AWS Skill Builder - Serverless Analytics (Portuguese)](#aws-skill-builder---serverless-analytics-portuguese)
-    - [AWS Skill Builder - Introduction to Amazon Athena (Portuguese)](#aws-skill-builder---introduction-to-amazon-athena-portuguese)
-    - [AWS Skill Builder - AWS Glue Getting Started (English)](#aws-skill-builder---aws-glue-getting-started-english)
-    - [AWS Skill Builder - Amazon EMR Getting Started (English)](#aws-skill-builder---amazon-emr-getting-started-english)
-    - [AWS Skill Builder - Getting Started with Amazon Redshift (Portuguese)](#aws-skill-builder---getting-started-with-amazon-redshift-portuguese)
-    - [AWS Skill Builder - Best Practices for Data Warehousing with Amazon Redshift (Portuguese)](#aws-skill-builder---best-practices-for-data-warehousing-with-amazon-redshift-portuguese)
-    - [AWS Skill Builder - Amazon QuickSight - Getting Started (English)](#aws-skill-builder---amazon-quicksight---getting-started-english)
-  
+  - [Exercícios](#exercícios)
+  - [Apache Spark - Contador de Palavras](#apache-spark---contador-de-palavras)
+    - [Realizando o pull da imagem:](#realizando-o-pull-da-imagem)
+    - [Criando um container:](#criando-um-container)
+    - [Jupyter Lab:](#jupyter-lab)
+    - [Obtendo arquivos do git:](#obtendo-arquivos-do-git)
+    - [Comandos para contar a quantidade de ocorrências de cada palavra contida](#comandos-para-contar-a-quantidade-de-ocorrências-de-cada-palavra-contida)
+  - [TMDB](#tmdb)
+  - [Conta e API criada com sucesso](#conta-e-api-criada-com-sucesso)
+  - [Testando as Credencias e a biblioteca](#testando-as-credencias-e-a-biblioteca)
+  - [Resultado](#resultado)
+
    
    
 # Resumo da Sprint 7
@@ -34,9 +22,6 @@
 ## Exercícios
 
 ## Apache Spark - Contador de Palavras
-
-
-
 
 
 ### Realizando o pull da imagem: 
@@ -70,3 +55,43 @@
 
 
 ![Foto 3](./Exercicios/Spark/Evidencias_Spark/comandos2.png)
+
+
+## TMDB
+
+## Conta e API criada com sucesso 
+
+![Foto 1](./Exercicios/TMBD/Evidencias_TMBD/Conta_tmdb.png)
+
+
+## Testando as Credencias e a biblioteca
+```python
+import requests
+import pandas as pd
+from IPython.display import display
+
+api_key = "MINHA_CHAVE"
+url = f"https://api.themoviedb.org/3/movie/top_rated?api_key={api_key}&language=pt-BR"
+
+
+response = requests.get(url)
+data = response.json()
+
+filmes = []
+
+for movie in data["results"]:
+    df = {
+        "Título": movie["title"],
+        "Data de lançamento": movie["release_date"],
+        "Visão geral": movie["overview"],
+        "Votos": movie["vote_count"],
+        "Média de votos": movie["vote_average"],
+    }
+    filmes.append(df)
+
+df = pd.DataFrame(filmes)
+display(df)
+```
+## Resultado
+
+![Foto 1](./Exercicios/TMBD/Evidencias_TMBD/Resultado.png)

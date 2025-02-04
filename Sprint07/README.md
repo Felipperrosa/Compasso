@@ -41,29 +41,32 @@
 
 ### Realizando o pull da imagem: 
 
-![Foto 1](./Exercicios/Spark/Evidencias_Spark/Captura%20de%20tela%202025-02-03%20145637.png)
+![Foto 1](./Exercicios/Spark/Evidencias_Spark/pull.png)
 
 
 ### Criando um container:
 
-![Foto 1](./Exercicios/Spark/Evidencias_Spark/Captura%20de%20tela%202025-02-03%20152854.png)
+![Foto 1](./Exercicios/Spark/Evidencias_Spark/criando_container.png)
 
 
-![Foto 2](./Exercicios/Spark/Evidencias_Spark/Captura%20de%20tela%202025-02-03%20152907.png)
+![Foto 2](./Exercicios/Spark/Evidencias_Spark/criando_container2.png)
 
 ### Jupyter Lab:
 
-![Foto 1](./Exercicios/Spark/Evidencias_Spark/Captura%20de%20tela%202025-02-03%20153357.png)
+![Foto 1](./Exercicios/Spark/Evidencias_Spark/Jupyterlab.png)
 
 
 ### Obtendo arquivos do git: 
 
-![Foto 1](./Exercicios/Spark/Evidencias_Spark/Captura%20de%20tela%202025-02-03%20154956.png)
+![Foto 1](./Exercicios/Spark/Evidencias_Spark/git.png)
 
 
 ### Comandos para contar a quantidade de ocorrências de cada palavra contida 
 
-![Foto 1](./Exercicios/Spark/Evidencias_Spark/Captura%20de%20tela%202025-02-03%20171032.png)
+![Foto 1](./Exercicios/Spark/Evidencias_Spark/container.png)
 
 
-![Foto 2](./Exercicios/Spark/Evidencias_Spark/Captura%20de%20tela%202025-02-03%20171043.png)
+![Foto 2](./Exercicios/Spark/Evidencias_Spark/comandos.png)
+
+
+![Foto 3](./Exercicios/Spark/Evidencias_Spark/comandos2.png)

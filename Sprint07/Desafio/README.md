@@ -15,31 +15,52 @@ O objetivo desse desafio era fazer uma ingestão de dados com uma api usando uma
 
 # Novas Peguntas 
 
-Com as novas perguntas 
+1. Como a popularidade dos filmes de guerra mudou ao longo dos anos?
 
-Como a popularidade dos filmes de guerra mudou ao longo dos anos?
+    Análise da variação na popularidade dos filmes classificados como "Guerra" ao longo das décadas.
 
-Quais filmes apresentam retorno financeiro abaixo do esperado?
+2. Quais filmes apresentam retorno financeiro abaixo do esperado?
 
-Qual é o orçamento médio dos filmes de guerra em comparação com os de
-crime?
+    Comparar receita e orçamento para identificar filmes com baixo retorno.
 
-Quais são as 10 filmes de crimes mais bem avaliadas?
+3. Qual é o orçamento médio dos filmes de guerra em comparação com os de crime?
 
-Quais diretores têm os filmes mais bem avaliados nas categorias de crime e
-guerra?
+    Cálculo do orçamento médio por gênero e comparação entre os dois.
 
-Quais os temas que mais aparecem na sinopse dos filmes de guerra?
+4. Quais são os 10 filmes de crime mais bem avaliados?
 
-Quais as principais empresas produzem filmes de crime?
+    Listar os 10 filmes do gênero "Crime" com melhor avaliação.
 
-Como os temas de filmes de guerra mudaram ao longo das décadas?
+5. Quais diretores têm os filmes mais bem avaliados nas categorias de crime e guerra?
 
-Quais países produzem mais filmes de guerra?
+    Identificar diretores com as melhores médias de avaliação nos dois gêneros.
 
-Popularidade de filmes indicados a prêmios de filmes de guerra e crime.
+6. Quais os temas que mais aparecem na sinopse dos filmes de guerra?
 
-Como as filmes de crime e guerra se comparam em popularidade e avaliação?
+    Análise de palavras-chave mais frequentes nas sinopses de filmes de guerra.
+
+7. Quais as principais empresas que produzem filmes de crime?
+
+    Identificar as produtoras mais ativas no gênero "Crime".
+
+8. Como os temas de filmes de guerra mudaram ao longo das décadas?
+
+    Comparar palavras-chave predominantes em diferentes décadas.
+
+9. Quais países produzem mais filmes de guerra?
+
+    Identificar os países mais ativos na produção de filmes do gênero "Guerra".
+
+10. Popularidade de filmes indicados a prêmios de filmes de guerra e crime.
+    
+    Análise da relação entre indicações/prêmios e popularidade.
+
+11. Como os filmes de crime e guerra se comparam em popularidade e avaliação?
+
+    Comparar a popularidade e média de avaliação entre os dois gêneros.
+
+
+
 
 # API
 

@@ -3,7 +3,9 @@
 
 - [Índice](#índice)
 - [Resumo da Sprint 7](#resumo-da-sprint-7)
-  - [Exercícios](#exercícios)
+- [Certificados](#certificados)
+    - [Não houve certificados nessa Sprint](#não-houve-certificados-nessa-sprint)
+- [Exercícios](#exercícios)
   - [Apache Spark - Contador de Palavras](#apache-spark---contador-de-palavras)
     - [Realizando o pull da imagem:](#realizando-o-pull-da-imagem)
     - [Criando um container:](#criando-um-container)
@@ -27,8 +29,14 @@
    
    
 # Resumo da Sprint 7
+**Spark:** Aprendi que o spark é uma ferramenta muito poderosa para o processamento distribuído de grandes volumes de dados, muito usada em Big Data. Aprendi sobre o Spark Core, que gerencia tarefas e distribui o processamento, e os RDDs (Resilient Distributed Datasets), que são a base para manipular dados de forma distribuída. Também vi que o Spark SQL permite trabalhar com consultas SQL em dados distribuídos e que os DataFrames e Datasets são estruturas otimizadas para análise e manipulação de dados no Spark.
 
-## Exercícios
+# Certificados
+
+### Não houve certificados nessa Sprint
+
+
+# Exercícios
 
 ## Apache Spark - Contador de Palavras
 

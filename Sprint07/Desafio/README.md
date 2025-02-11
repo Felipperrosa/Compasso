@@ -6,6 +6,7 @@ O objetivo desse desafio era fazer uma ingestão de dados com uma api usando uma
 - [Desafio](#desafio)
 - [Índice](#índice)
 - [Novas Peguntas](#novas-peguntas)
+- [API](#api)
   - [Criando minhas camadas](#criando-minhas-camadas)
   - [Função Lambda](#função-lambda)
   - [Permissões necessárias](#permissões-necessárias)
@@ -39,6 +40,22 @@ Quais países produzem mais filmes de guerra?
 Popularidade de filmes indicados a prêmios de filmes de guerra e crime.
 
 Como as filmes de crime e guerra se comparam em popularidade e avaliação?
+
+# API
+
+API TMDB (The Movie Database)
+
+A API do TMDB foi escolhida para este projeto devido a:
+
+Ampla Base de Dados: Contém informações detalhadas sobre filmes, séries, diretores, elenco, empresas de produção e gêneros.
+
+Disponibilidade de Informações Relevantes: Permite acesso a dados como orçamento, receita, popularidade, avaliação, gênero e sinopse.
+
+Facilidade de Integração: Fornece endpoints bem documentados e de fácil uso para obtenção dos dados necessários.
+
+Suporte a Consultas Avançadas: Permite filtrar filmes por gênero, ano de lançamento, diretores e outras informações essenciais para a análise.
+
+
 
 
 ## Criando minhas camadas

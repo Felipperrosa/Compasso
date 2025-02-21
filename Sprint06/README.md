@@ -17,8 +17,20 @@
   - [Etapa 3:](#etapa-3-1)
   - [Etapa 4:](#etapa-4)
 - [Certificados](#certificados)
+
+    - [AWS Skill Builder - Fundamentals of Analytics on AWS – Part 1 (Portuguese)](#aws-skill-builder---fundamentals-of-analytics-on-aws--part-1-portuguese)
+    - [AWS Skill Builder -  Fundamentals of Analytics on AWS – Part 2 (Portuguese)](#aws-skill-builder----fundamentals-of-analytics-on-aws--part-2-portuguese)
+    - [AWS Skill Builder - Serverless Analytics (Portuguese)](#aws-skill-builder---serverless-analytics-portuguese)
+    - [AWS Skill Builder - Introduction to Amazon Athena (Portuguese)](#aws-skill-builder---introduction-to-amazon-athena-portuguese)
+    - [AWS Skill Builder - AWS Glue Getting Started (English)](#aws-skill-builder---aws-glue-getting-started-english)
+    - [AWS Skill Builder - Amazon EMR Getting Started (English)](#aws-skill-builder---amazon-emr-getting-started-english)
+    - [AWS Skill Builder - Getting Started with Amazon Redshift (Portuguese)](#aws-skill-builder---getting-started-with-amazon-redshift-portuguese)
+    - [AWS Skill Builder - Best Practices for Data Warehousing with Amazon Redshift (Portuguese)](#aws-skill-builder---best-practices-for-data-warehousing-with-amazon-redshift-portuguese)
+    - [AWS Skill Builder - Amazon QuickSight - Getting Started (English)](#aws-skill-builder---amazon-quicksight---getting-started-english)
+
     - [Curso-padrão de preparação para o exame AWS Certified Cloud Practitioner (CLF-C02 - Português)](#curso-padrão-de-preparação-para-o-exame-aws-certified-cloud-practitioner-clf-c02---português)
     - [Link - AWS Cloud Quest: Cloud Practitioner](#link---aws-cloud-quest-cloud-practitioner)
+
   
    
    
@@ -42,7 +54,11 @@ Eu aprendi sobre o AWS Glue, um serviço serverless de integração de dados usa
 **AWS Skill Builder - Amazon EMR Getting Started (English):**
 Eu aprendi sobre o Amazon EMR, a solução líder em big data na nuvem para processamento de dados em escala de petabytes, análises interativas e aprendizado de máquina, utilizando frameworks de código aberto como Apache Spark, Apache Hive e Presto. O curso destacou o Amazon EMR Serverless, uma opção eficiente e econômica que permite a engenheiros e analistas de dados executar aplicações sem a necessidade de gerenciar, otimizar ou operar clusters. Também explorei os benefícios, casos de uso e conceitos técnicos do Amazon EMR. Tive a oportunidade de experimentar o Amazon EMR Serverless e o Amazon EMR Cluster por meio de tutoriais no Console de Gerenciamento da AWS.
 
+
+**AWS Skill Builder - Getting Started with Amazon Redshift (Portuguese):**
+
 **Getting Started with Amazon Redshift (Portuguese):**
+
 Eu aprendi sobre o Amazon Redshift, um serviço de data warehouse na nuvem integrado com data lakes no Amazon S3 e com serviços de banco de dados relacional como Amazon RDS e Amazon Aurora. O curso destacou os benefícios, casos de uso comuns e conceitos técnicos do Redshift. Também explorei como o Redshift permite a criação e utilização de modelos de machine learning (ML) diretamente com comandos SQL familiares, simplificando o uso de ML. Além disso, tive a oportunidade de experimentar o serviço por meio de uma demonstração prática no Console de Gerenciamento da AWS.
 
 **AWS Skill Builder - Best Practices for Data Warehousing with Amazon Redshift (Portuguese):**
@@ -202,6 +218,45 @@ Teste final.
 
 
 # Certificados
+
+
+### AWS Skill Builder - Fundamentals of Analytics on AWS – Part 1 (Portuguese)
+
+![Foto 1](./Certificados/AWS%20Skill%20Builder%20-%20Fundamentals%20of%20Analytics%20on%20AWS%20–%20Part%201%20(Portuguese).png)
+
+### AWS Skill Builder -  Fundamentals of Analytics on AWS – Part 2 (Portuguese)
+
+![Foto 2](./Certificados/AWS%20Skill%20Builder%20-%20%20Fundamentals%20of%20Analytics%20on%20AWS%20–%20Part%202%20(Portuguese).png)
+
+### AWS Skill Builder - Serverless Analytics (Portuguese)
+
+![Foto 3](./Certificados/AWS%20Skill%20Builder%20-%20Serverless%20Analytics%20(Portuguese).png)
+
+### AWS Skill Builder - Introduction to Amazon Athena (Portuguese)
+
+![Foto 4](./Certificados/AWS%20Skill%20Builder%20-%20Introduction%20to%20Amazon%20Athena%20(Portuguese).png)
+
+### AWS Skill Builder - AWS Glue Getting Started (English)
+
+![Foto 5](./Certificados/AWS%20Skill%20Builder%20-%20AWS%20Glue%20Getting%20Started%20(English).png)
+
+### AWS Skill Builder - Amazon EMR Getting Started (English)
+
+![Foto 6](./Certificados/AWS%20Skill%20Builder%20-%20Amazon%20EMR%20Getting%20Started%20(English).png)
+
+### AWS Skill Builder - Getting Started with Amazon Redshift (Portuguese)
+
+![Foto 7](./Certificados/AWS%20Skill%20Builder%20-%20Getting%20Started%20with%20Amazon%20Redshift%20(Portuguese).png)
+
+### AWS Skill Builder - Best Practices for Data Warehousing with Amazon Redshift (Portuguese)
+
+![Foto 8](./Certificados/AWS%20Skill%20Builder%20-%20Best%20Practices%20for%20Data%20Warehousing%20with%20Amazon%20Redshift%20(Portuguese).png)
+
+### AWS Skill Builder - Amazon QuickSight - Getting Started (English)
+
+![Foto 9](./Certificados/AWS%20Skill%20Builder%20-%20Amazon%20QuickSight%20-%20Getting%20Started%20(English).png)
+
+
 
 ### Curso-padrão de preparação para o exame AWS Certified Cloud Practitioner (CLF-C02 - Português) 
 

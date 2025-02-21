@@ -1,7 +1,7 @@
 import boto3
 
 # Criando Sessão
-session = boto3.Session(profile_name="nome_do_perfil_sso")
+session = boto3.Session(profile_name="442426891183_AdministratorAccess")
 
 s3 = session.client("s3")
 

@@ -15,8 +15,14 @@ O Desafio  foca no processamento da camada Trusted de um data lake, onde os dado
 - [O Desafio](#o-desafio)
   - [Job CSV](#job-csv)
   - [Resultados](#resultados)
+    - [Camada raw data](#camada-raw-data)
+    - [Camada trusted data](#camada-trusted-data)
+    - [Athena](#athena)
   - [Job Json](#job-json)
   - [Resultados](#resultados-1)
+    - [Camada raw data](#camada-raw-data-1)
+    - [Camada trusted data](#camada-trusted-data-1)
+    - [Athena](#athena-1)
 
 
 ## Tema do desafio 
@@ -108,6 +114,7 @@ job = Job(glueContext)
 args = getResolvedOptions(sys.argv, ["JOB_NAME", "S3_INPUT_PATH", "S3_TARGET_PATH"])
 job.init(args["JOB_NAME"], args)
 
+# Extração de ano, mês e dia do caminho de entrada
 match = re.search(r"(\d{4})/(\d{2})/(\d{2})", args["S3_INPUT_PATH"])
 ano, mes, dia = match.groups()  
 
@@ -136,8 +143,14 @@ job.commit()
 
 ## Resultados
 
+
+### Camada raw data
+![Foto 1](../Evidencias/data_raw_csv.png)
+
+### Camada trusted data
 ![Foto 1](../Evidencias/csv.png)
 
+### Athena
 ![Foto 2](../Evidencias/csv_table1.png)
 
 ![Foto 3](../Evidencias/csv_table2.png)
@@ -193,12 +206,18 @@ job.commit()
 
 
 ```
-
+ 
 
 ## Resultados
+### Camada raw data
+![Foto 1](../Evidencias/data_raw_json.png)
 
+
+### Camada trusted data
 ![Foto 1](../Evidencias/json.png)
 
+
+### Athena
 ![Foto 2](../Evidencias/json_table1.png)
 
 ![Foto 3](../Evidencias/json_table2.png)

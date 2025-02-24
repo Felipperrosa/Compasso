@@ -1,10 +1,12 @@
 # Desafio
+
 Neste desafio foi proposto criar duas perguntas para análises e fazer a ingestão em lote (batch) dos dados. O processo envolve ler dois arquivos CSV (de filmes e séries) e carregar esses dados para o S3 da AWS usando a biblioteca boto3, sem filtrar as informações. As perguntas devem ser definidas para orientar a análise dos dados. Para o carregamento, o caminho no S3 deve seguir um padrão específico, incluindo a origem, formato, data e nome do arquivo. Também é necessário configurar um container Docker com um volume para armazenar os arquivos CSV e rodar o processo Python localmente para realizar a carga ao S3.
+
 
 # Índice
 
 - [Desafio](#desafio)
-- [Índice](#índice)
+
 - [Peguntas](#peguntas)
   - [1. Implementando código Python](#1-implementando-código-python)
   - [2. Criando um container com volume para armazenar e executar processo python.](#2-criando-um-container-com-volume-para-armazenar-e-executar-processo-python)
@@ -142,5 +144,13 @@ Obs: O caminho da DATA pode ser visualizado acima de serie.csv
 ![Foto](../Evidencias/series.png)
 
 
+
+  - [Como fiz a conexão com a AWS](#como-fiz-a-conexão-com-a-aws)
+  - [Criando o bucket e fazendo o upload do arquivo para o S3](#criando-o-bucket-e-fazendo-o-upload-do-arquivo-para-o-s3)
+  - [Executando](#executando)
+  - [Bucket criado com o CSV original](#bucket-criado-com-o-csv-original)
+  - [Criando um script Python para carregar o arquivo do S3 e transformá-lo em um DataFrame usando pandas](#criando-um-script-python-para-carregar-o-arquivo-do-s3-e-transformá-lo-em-um-dataframe-usando-pandas)
+  - [Executando](#executando-1)
+  - [Bucket AWS S3 após uma execução](#bucket-aws-s3-após-uma-execução)
 
 

@@ -23,6 +23,7 @@
    
    
 # Resumo da Sprint 8
+Nesta sprint, colocamos em prática os conhecimentos adquiridos sobre o Apache Spark na sprint 07, juntamente com o uso do AWS Glue, para realizar o processamento e a transformação de dados no contexto de um data lake. O objetivo principal foi avançar na construção da camada Trusted, que representa a etapa em que os dados estão limpos, padronizados e prontos para análise, após serem integrados a partir de diversas fontes da camada Raw.
 
 # Certificados
 

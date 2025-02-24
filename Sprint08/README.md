@@ -32,9 +32,8 @@ Nesta sprint, colocamos em prática os conhecimentos adquiridos sobre o Apache S
 
 # Exercícios
 
-- [Geração e massa de dados.](./Exercicios/Geração_e_massa_de_dados/)
+- [Geração e massa de dados e Spark.](./Exercicios/Geração_e_Spark/)
 - [TMDB.](./Exercicios/TMBD/)
-- [Spark.](./Exercicios/Geração_e_Spark/spark.ipynb)
 
 # Apache Spark 
 O Exercício se encontra no notebook abaixo

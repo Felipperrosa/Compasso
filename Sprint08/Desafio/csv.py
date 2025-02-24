@@ -17,7 +17,7 @@ args = getResolvedOptions(sys.argv, ["JOB_NAME", "S3_INPUT_PATH", "S3_TARGET_PAT
 job.init(args["JOB_NAME"], args)
 
 match = re.search(r"(\d{4})/(\d{2})/(\d{2})", args["S3_INPUT_PATH"])
-ano, mes, dia = match.groups()
+ano, mes, dia = match.groups()  
 
 df_raw = spark.read.csv(args["S3_INPUT_PATH"], header=True, inferSchema=True, sep="|")
 
@@ -31,9 +31,9 @@ df_raw = df_raw.withColumn("mes", lit(mes))
 df_raw = df_raw.withColumn("dia", lit(dia))
 
 # Particionar os dados por 'ano', 'mes' e 'dia' e salvar como Parquet
-df_raw.write.partitionBy("ano", "mes", "dia").mode("overwrite").parquet(
-    f"{args['S3_TARGET_PATH']}"
-)
+df_raw.write.partitionBy("ano", "mes", "dia") \
+    .mode("overwrite") \
+    .parquet(f"{args['S3_TARGET_PATH']}")
 
 
 job.commit()

@@ -33,7 +33,7 @@
 * [Sprint 5](./Sprint05)
 * [Sprint 6](./Sprint06)
 * [Sprint 7](./Sprint07)
-* [Sprint 8](https://www.exemplo.com)
+* [Sprint 8](./Sprint08)
 * [Sprint 9](https://www.exemplo.com)
 * [Sprint 10](https://www.exemplo.com)
 

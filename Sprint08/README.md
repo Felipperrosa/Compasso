@@ -86,7 +86,9 @@ with open('animals.csv', mode ='w',newline='') as file:
 print("Nomes armazenados com sucesso!")
 ```
 ### Resultado 
-[animals.csv.](./Exercicios/Geração_e_massa_de_dados/animals.csv)
+[animals.csv.](./Exercicios/Geração_e_Spark/nomes_aleatorios.txt)
+
+
 
 
 ## Nomes Aleatórios 

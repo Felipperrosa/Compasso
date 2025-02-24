@@ -32,14 +32,13 @@ Nesta sprint, colocamos em prática os conhecimentos adquiridos sobre o Apache S
 
 # Exercícios
 
-- [Geração e massa de dados.](./Exercicios/Geração_e_massa_de_dados/)
+- [Geração e massa de dados e Spark.](./Exercicios/Geração_e_Spark/)
 - [TMDB.](./Exercicios/TMBD/)
-- [Spark.](./Exercicios/Spark/)
 
 # Apache Spark 
 O Exercício se encontra no notebook abaixo
 
-[Spark.](./Exercicios/Spark/spark.ipynb)
+[Spark.](./Exercicios/Geração_e_Spark/spark.ipynb)
 
 
 
@@ -62,7 +61,7 @@ print(numbers)
 ```
 ### Resultado 
 
-[numeros.](./Exercicios/Geração_e_massa_de_dados/warmup.ipynb)
+[numeros.](./Exercicios/Geração_e_Spark/warmup.ipynb)
 
 ### 2. Animais 
 
@@ -86,7 +85,9 @@ with open('animals.csv', mode ='w',newline='') as file:
 print("Nomes armazenados com sucesso!")
 ```
 ### Resultado 
-[animals.csv.](./Exercicios/Geração_e_massa_de_dados/animals.csv)
+[animals.csv.](./Exercicios/Geração_e_Spark/animals.csv)
+
+
 
 
 ## Nomes Aleatórios 
@@ -123,7 +124,7 @@ with open("nomes_aleatorios.txt", "w", encoding="utf-8") as f:
 ```
 
 ### Resultado 
-[nomes_aleatorios.txt.](./Exercicios/Geração_e_massa_de_dados/nomes_aleatorios.txt)
+[nomes_aleatorios.txt.](./Exercicios/Geração_e_Spark/nomes_aleatorios.txt)
 
 
 

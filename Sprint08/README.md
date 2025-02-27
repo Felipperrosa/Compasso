@@ -51,7 +51,7 @@ O Exercício se encontra no notebook abaixo
 ```python
 
 import random
-
+# Executa números aleatórios 1 a 500 e retorna 250
 numbers = [random.randint(1, 500) for _ in range(250)]
 numbers.reverse()
 
@@ -69,14 +69,16 @@ print(numbers)
 ```python
 import csv
 
+# Array de animais aleatórios
 animals  = ["Leão", "Tigre", "Elefante", "Girafa", "Lobo", "Cachorro", "Gato", "Urso", "Águia", "Tubarão",
 "Cobra", "Cavalo", "Panda", "Cervo", "Rinoceronte", "Gorila", "Jacaré", "Raposa", "Coelho", "Arraia",
 "Golfinho", "Falcão", "Zebra", "Porco-espinho", "Pinguim"]
-
+# O método sort() ordena os elementos do próprio array e retorna o array
 animals.sort()
 
 [print(x) for x in animals]
 
+# Gera um arquivo csv
 with open('animals.csv', mode ='w',newline='') as file:
     writer = csv.writer(file)
     for x in animals:
@@ -115,7 +117,7 @@ dados=[]
 
 for i in range(0,amount_random_names):
     dados.append(random.choice(aux))
-    
+# Gera um arquivo txt com os nomes
 with open("nomes_aleatorios.txt", "w", encoding="utf-8") as f:
     for row in dados:
         f.write(f"{row}\n")

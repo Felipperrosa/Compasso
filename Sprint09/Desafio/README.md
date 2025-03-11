@@ -13,6 +13,7 @@ O Desafio foca no processamento da camada Refined de um data lake onde fazemos a
 - [API TMDB (The Movie Database)](#api-tmdb-the-movie-database)
 - [API OMDB (Open Movie Database)](#api-omdb-open-movie-database)
 - [O Desafio](#o-desafio)
+  - [Modelo Dimensional](#modelo-dimensional)
   - [Job](#job)
   - [Resultados](#resultados)
     - [Athena](#athena)
@@ -94,6 +95,10 @@ Contagem de Votos e Média de Avaliação: Embora o TMDB também forneça dados 
 
 
 # O Desafio 
+
+## Modelo Dimensional
+
+![Foto ](../Evidencias/modelodimen.png)
 
 ## Job 
 

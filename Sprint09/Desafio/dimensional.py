@@ -78,7 +78,17 @@ df_explodido_data = df.withColumn(
     "dataLancamento", explode(col("dataLancamentoPorPais"))
 )
 
-# Criar tabelas dimensionais com IDs sequenciais
+# Acessar corretamente a coluna 'pais' dentro do struct 'dataLancamento'
+dim_paises = (
+    df.selectExpr("explode(pais_origem) as pais")
+    .union(df_explodido_data.selectExpr("dataLancamento.pais as pais"))
+    .filter(col("pais").isNotNull())
+    .filter(trim(col("pais")) != "")
+    .dropDuplicates()
+    .withColumn("pais", trim(col("pais")))
+    .withColumn("id_paises", row_number().over(Window.orderBy(lit(1))))
+)
+
 dim_atores = (
     df.selectExpr("explode(atores) as ator")
     .selectExpr(
@@ -88,15 +98,6 @@ dim_atores = (
     )
     .dropDuplicates()
     .withColumn("id_atores", row_number().over(Window.orderBy(lit(1))))
-)
-
-# Dimensão de países - sem data de lançamento
-dim_paises = (
-    df.selectExpr("explode(dataLancamentoPorPais) as data")
-    .selectExpr("data.pais as pais", "data.tipo as tipo")
-    .dropDuplicates()
-    .withColumn("pais", trim(lower(col("pais"))))
-    .withColumn("id_paises", row_number().over(Window.orderBy(lit(1))))
 )
 
 dim_diretores = (
@@ -137,52 +138,70 @@ dim_tempo = df_explodido_data.select(
     date_format(col("dataLancamento.dataLancamento"), "MMMM").alias("nome_mes"),
 ).dropDuplicates()
 
-# Criar a tabela fato associando os novos IDs e adicionando um ID único para os filmes
+# Criar df_filmes_pais para mapear filmes aos países
+df_filmes_pais = df_explodido_linguas.select(
+    col("id").alias("id_filme"), col("pais_origem").alias("pais")
+).dropDuplicates()
+
+# Agora, faz o join entre df_filmes_pais e dim_paises
+df_filmes_pais = df_filmes_pais.join(
+    dim_paises, df_filmes_pais["pais"] == dim_paises["pais"], "left"
+).select(col("id_filme"), dim_paises["id_paises"])
+
+# Explodir a coluna de atores para que cada ator seja uma linha separada
+df_explodido_atores = df_explodido_linguas.withColumn(
+    "ator", explode(col("atores"))
+).withColumn("nome_ator", col("ator.nome"))
+
+# Agora, fazemos o join entre a tabela de fato e a tabela dim_atores, utilizando o nome do ator
 fato_filmes = (
-    df_explodido_linguas.join(
-        dim_tempo, df_explodido_linguas["anoLancamento"] == dim_tempo["ano"], "left"
+    df_explodido_atores.join(
+        dim_tempo, df_explodido_atores["anoLancamento"] == dim_tempo["ano"], "left"
     )
     .join(
         dim_diretores,
-        df_explodido_linguas["diretor"] == dim_diretores["nome_diretor"],
+        df_explodido_atores["diretor"] == dim_diretores["nome_diretor"],
         "left",
     )
-    .join(dim_paises, df_explodido_linguas["pais_origem"] == dim_paises["pais"], "left")
+    .join(
+        df_filmes_pais, df_explodido_atores["id"] == df_filmes_pais["id_filme"], "left"
+    )
     .join(
         dim_produtoras,
-        df_explodido_linguas["produtora"] == dim_produtoras["nome_produtora"],
+        df_explodido_atores["produtora"] == dim_produtoras["nome_produtora"],
         "left",
     )
     .join(
-        dim_generos,
-        df_explodido_linguas["genero"] == dim_generos["nome_genero"],
-        "left",
+        dim_generos, df_explodido_atores["genero"] == dim_generos["nome_genero"], "left"
     )
     .join(
-        dim_linguas,
-        df_explodido_linguas["lingua"] == dim_linguas["nome_lingua"],
-        "left",
+        dim_linguas, df_explodido_atores["lingua"] == dim_linguas["nome_lingua"], "left"
+    )
+    .join(
+        dim_atores, df_explodido_atores["nome_ator"] == dim_atores["nome_ator"], "left"
     )
     .select(
-        df_explodido_linguas["id"].alias("id_filmes"),
-        df_explodido_linguas["tituloOriginal"],
-        df_explodido_linguas["anoLancamento"],
-        df_explodido_linguas["avaliacaoIMDB"],
-        df_explodido_linguas["votosIMDB"],
-        df_explodido_linguas["premiosIMDB"],
-        df_explodido_linguas["bilheteria"],
-        df_explodido_linguas["orcamento"],
-        df_explodido_linguas["tempoMinutos"],
+        df_explodido_atores["id"].alias("id_filmes"),
+        df_explodido_atores["tituloOriginal"],
+        df_explodido_atores["anoLancamento"],
+        df_explodido_atores["avaliacaoIMDB"],
+        df_explodido_atores["votosIMDB"],
+        df_explodido_atores["premiosIMDB"],
+        df_explodido_atores["bilheteria"],
+        df_explodido_atores["orcamento"],
+        df_explodido_atores["tempoMinutos"],
         dim_tempo["data"],
         dim_diretores["id_diretores"],
-        dim_paises["id_paises"],
+        df_filmes_pais["id_paises"],
         dim_produtoras["id_produtoras"],
         dim_generos["id_generos"],
         dim_linguas["id_linguas"],
+        dim_atores["id_atores"],
     )
     .dropDuplicates(["id_filmes"])
 )
 
+# Caminho de destino no S3
 refined_path = args["S3_TARGET_PATH"]
 
 # Salvar tabelas no S3

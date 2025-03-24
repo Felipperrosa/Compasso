@@ -114,6 +114,7 @@ Foi usado o campo calculado de seguinde forma:
 ![Foto ](../Evidencias/campoR.png)
 
 Foi usado o campo ROI calculado de seguinde forma: 
+
 ![Foto ](../Evidencias/rois.png)
 
 ![Foto ](../Evidencias/campoRoi.png)
@@ -131,13 +132,19 @@ Foi usado somente campos do próprio dataset:
 
 ## Popularidade dos Filmes 
 
-O gráfico de barras abaixo mostra a popularidade de cada filme, calculado a média entre avaliação e bilheteria.
+O gráfico de barras abaixo mostra a popularidade de cada filme, calculado a média entre avaliação e bilheteria, também o filme uma KPI com o filme mais popular.
 
 ![Foto ](../Evidencias/popu.png)
+
+![Foto ](../Evidencias/cima_p.png)
 
 Foi usado o campo calculado de seguinde forma:
 
 ![Foto ](../Evidencias/incide_de_popu.png)
+
+![Foto ](../Evidencias/campoindice.png)
+
+
 
 ## Evolução Das Avaliações ao Longo da Trilogia
 

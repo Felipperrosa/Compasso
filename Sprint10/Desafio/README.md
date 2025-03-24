@@ -5,11 +5,15 @@ O Desafio foca no processamento da camada Refined de um data lake onde fazemos a
 - [Desafio](#desafio)
 - [Índice](#índice)
   - [Tema do desafio](#tema-do-desafio)
-  - [**1. Desempenho Comercial e Recepção Crítica**](#1-desempenho-comercial-e-recepção-crítica)
-  - [**2. Análise de Personagens e Popularidade**](#2-análise-de-personagens-e-popularidade)
-  - [**3. Evolução Narrativa e Temática**](#3-evolução-narrativa-e-temática)
-  - [**4. Legado e Influência Cultural**](#4-legado-e-influência-cultural)
-  - [**5. Premiações e Direção**](#5-premiações-e-direção)
+- [Dashboard - Análise de Filmes](#dashboard---análise-de-filmes)
+  - [1. Desempenho Financeiro](#1-desempenho-financeiro)
+    - [1.2. Qual foi o desempenho de bilheteira de cada filme em comparação ao seu orçamento?](#12-qual-foi-o-desempenho-de-bilheteira-de-cada-filme-em-comparação-ao-seu-orçamento)
+    - [1.3. Qual o retorno financeiro de cada filme (bilheteira menos orçamento), e qual teve o maior lucro?](#13-qual-o-retorno-financeiro-de-cada-filme-bilheteira-menos-orçamento-e-qual-teve-o-maior-lucro)
+    - [1.4. Como as avaliações evoluíram ao longo da trilogia?](#14-como-as-avaliações-evoluíram-ao-longo-da-trilogia)
+    - [1.5. Qual foi o filme mais popular entre os três, considerando métricas como bilheteira e avaliação crítica?](#15-qual-foi-o-filme-mais-popular-entre-os-três-considerando-métricas-como-bilheteira-e-avaliação-crítica)
+  - [2. Geolocalização](#2-geolocalização)
+    - [2.1. Por que diferenciam tanto Sicília de Itália?](#21-por-que-diferenciam-tanto-sicília-de-itália)
+    - [2.2. Quais países foram exibidos os filmes?](#22-quais-países-foram-exibidos-os-filmes)
 - [O Desafio](#o-desafio)
   - [Parte 1](#parte-1)
   - [Parte 2](#parte-2)
@@ -27,43 +31,29 @@ O Desafio foca no processamento da camada Refined de um data lake onde fazemos a
 
 O tema do desafio será a trilogia do Poderoso Chefão, um clássico do cinema que não apenas marcou a história do cinema, mas também influenciou inúmeras outras obras cinematográficas. A trilogia, dirigida por Francis Ford Coppola, é baseada no romance de Mario Puzo e retrata a saga da família Corleone, explorando temas como poder, lealdade, traição e a complexidade das relações familiares.
 
-As perguntas que serão analisadas foram dividas em 5 Categorias 
+As perguntas que serão analisadas foram dividas em 2 Categorias 
 
+# Dashboard - Análise de Filmes
 
-## **1. Desempenho Comercial e Recepção Crítica**  
-**(Foco em bilheteria, orçamento e avaliações)**  
-- **1.1** - Qual é a avaliação média de cada filme da trilogia, levando em consideração o número de votos?  
-- **1.2** - Qual foi o desempenho de bilheteria de cada filme em comparação ao seu orçamento?  
-- **1.3** - Qual o retorno financeiro de cada filme (bilheteria menos orçamento), e qual teve o maior lucro?  
-- **1.4** - Como as avaliações evoluíram ao longo da trilogia?  
-- **1.5** - Qual foi o filme mais popular entre os três, considerando métricas como bilheteria e avaliação crítica?**  
-- **1.6** - Quais países esses filmes foram lançados?** 
+## 1. Desempenho Financeiro
 
+### 1.2. Qual foi o desempenho de bilheteira de cada filme em comparação ao seu orçamento?
 
-## **2. Análise de Personagens e Popularidade**  
-**(Foco na relevância dos personagens e sua evolução ao longo da trilogia)**  
-- **2.1** - Qual personagem é mais popular em cada filme da trilogia? Como a popularidade varia ao longo dos filmes?  
-- **2.2** - Quais personagens tiveram mais destaque no filme 2 e 3 em comparação ao 1? 
+### 1.3. Qual o retorno financeiro de cada filme (bilheteira menos orçamento), e qual teve o maior lucro?
 
+### 1.4. Como as avaliações evoluíram ao longo da trilogia?
 
-## **3. Evolução Narrativa e Temática**  
-**(Foco em mudanças na história, temas principais e estilo do filme)**  
-- **3.1** - Como a narrativa e os temas principais da trilogia evoluíram ao longo dos três filmes? Quais elementos (personagens, eventos, cenários) mudaram?  
-- **3.2** - Por que diferenciam tanto Sicília de Itália?  
-- **3.3** - Quais foram as línguas faladas durante a trilogia, e como isso refletiu a diversidade cultural no enredo?**  
+### 1.5. Qual foi o filme mais popular entre os três, considerando métricas como bilheteira e avaliação crítica?
 
+---
 
-## **4. Legado e Influência Cultural**  
-**(Foco na recepção do público ao longo dos anos e impacto da trilogia no cinema e na cultura pop)**  
-- **4.1** - Como a popularidade de *O Poderoso Chefão* se manteve ao longo das décadas, considerando relançamentos e a influência cultural?  
-- **4.2** - Como o público respondeu ao final da trilogia, especialmente em relação à recepção mista de *The Godfather Part III* comparado ao sucesso dos filmes 1 e 2?  
-- **4.3** - Como a popularidade da trilogia foi afetada ao longo dos anos, incluindo o impacto de novos públicos e reexibições?**  
+## 2. Geolocalização
 
+### 2.1. Por que diferenciam tanto Sicília de Itália?
 
-## **5. Premiações e Direção**  
-**(Foco nos prêmios, impacto das premiações e decisões criativas de Coppola)**  
-- **5.1** - Quantos prêmios importantes cada filme ganhou?  
-- **5.5** - Como as locações e ambientações geográficas impactaram a autenticidade e a narrativa, e como influenciaram as decisões do enredo?  
+### 2.2. Quais países foram exibidos os filmes?
+
+---
 
 
 # O Desafio 
@@ -106,16 +96,18 @@ O gráfico de barras abaixo mostra o retorno financeiro (Lucro Bruto) de cada fi
 
 ![Foto ](../Evidencias/cima_ROI.png)
 
-Foi usado o campo calculado de seguinde forma: 
-
+Foi usado o campo calculado de seguinde forma:
 
 ![Foto ](../Evidencias/campos_usados.png)
 
 ![Foto ](../Evidencias/campoR.png)
 
-Foi usado o campo ROI calculado de seguinde forma: 
+
+
+Foi usado o campo ROI calculado de seguinde forma:
 
 ![Foto ](../Evidencias/rois.png)
+
 
 ![Foto ](../Evidencias/campoRoi.png)
 
@@ -162,7 +154,7 @@ Foi usado somente campos do próprio dataset:
 
 O gráfico abaixo mostra a geolocalização de cade país onde cada filme foi lançado.
 
-![Foto](../Evidencias/avaliacao.png)
+![Foto](../Evidencias/paises.png)
 
 ![Foto](../Evidencias/51.png)
 

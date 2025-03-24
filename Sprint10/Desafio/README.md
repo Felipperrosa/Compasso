@@ -81,7 +81,7 @@ Este processo foi repetido para todos os datasets. O resultado final dos joins �
 Após concluir esses passos, é possível iniciar a criação do dashboard.
 
 ## Parte 3
-Esee é o resultado do meu dashbord.
+Esse é o resultado do meu dashbord.
 
 ![Foto ](../Evidencias/dasboard.png)
 

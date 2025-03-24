@@ -1,6 +1,5 @@
-# Resumo da Sprint 9
-Nesta sprint, criamos a camada Refined do data lake, transformando os dados da Trusted Zone para análise. Utilizamos Apache Spark para processar e armazenar os dados em PARQUET, aplicando particionamento conforme necessário. Também estruturamos as tabelas no AWS Glue Data Catalog seguindo a modelagem multidimensional para facilitar consultas. 
-
+# Resumo da Sprint 10
+Após a conclusão das etapas de ingestão, armazenamento e processamento de dados no data lake, o foco agora está na extração de insights. Nesta sprint, os dados serão transformados em informações estratégicas e visualizados por meio do Amazon QuickSight, permitindo uma análise mais intuitiva e eficiente. O objetivo é garantir que as visualizações reflitam com precisão os principais indicadores e tendências extraídos dos dados processados.
 # Exercícios
 
 ### Não houve exercícios nessa Sprint

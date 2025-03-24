@@ -35,7 +35,7 @@
 * [Sprint 7](./Sprint07)
 * [Sprint 8](./Sprint08)
 * [Sprint 9](./Sprint09)
-* [Sprint 10](https://www.exemplo.com)
+* [Sprint 10](./Sprint10)
 
 
 `Aproveite!:)`
